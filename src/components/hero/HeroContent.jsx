@@ -34,7 +34,7 @@ export default function HeroContent() {
       </h1>
 
       <p className="mb-2 text-base font-semibold text-blue-100 md:text-lg">
-        Admissions Open 2026–27 at Rainbow International School.
+        Admissions Open 2026–27 at Horizon International School.
       </p>
       <p className="mb-8 max-w-lg text-sm leading-relaxed font-light text-blue-200/70 md:text-base">
         A CBSE-affiliated K–12 school with a 3.5-acre campus, strong academics,

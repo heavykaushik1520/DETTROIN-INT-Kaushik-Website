@@ -14,7 +14,7 @@ export const BEYOND_TAGS = [
 export const BEYOND_IMAGES = {
   main: {
     src: rocketImg,
-    alt: 'Beyond The Classroom at Rainbow International School — Tours, Exhibitions, Clubs, Promoting Green, Dignity of Labour',
+    alt: 'Beyond The Classroom at Horizon International School — Tours, Exhibitions, Clubs, Promoting Green, Dignity of Labour',
   },
   topRight: {
     src: prePrimaryImg,

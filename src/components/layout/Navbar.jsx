@@ -74,7 +74,7 @@ export default function Navbar({ menuOpen, setMenuOpen, scrolled = false }) {
         <div className="container mx-auto flex items-center justify-between gap-6 px-4 py-2">
           <a href="/" className="flex shrink-0 items-center gap-2">
             <img
-              alt="Rainbow International School"
+              alt="Horizon International School"
               width="56"
               height="56"
               className="h-14 w-auto object-contain transition-all duration-300"

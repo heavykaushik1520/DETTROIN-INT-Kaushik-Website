@@ -45,19 +45,19 @@ function DiscoverCard({ card, index }) {
   )
 }
 
-export default function DiscoverRainbow() {
+export default function DiscoverHorizon() {
   return (
     <section className="py-24" style={{ background: 'rgb(248, 250, 252)' }}>
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
           <div className="mb-4 inline-block">
             <span className="text-xs font-semibold tracking-[0.2em] text-amber-500 uppercase">
-              Life at Rainbow
+              Life at Horizon
             </span>
             <div className="mx-auto mt-2 h-0.5 w-8 bg-amber-400" />
           </div>
           <h2 className="mb-4 text-4xl leading-tight font-extrabold tracking-tight text-gray-900 md:text-5xl">
-            Let&apos;s Discover Rainbow!
+            Let&apos;s Discover Horizon!
           </h2>
           <p className="mx-auto max-w-xl text-base text-gray-500">
             Committed to educating, strengthening, and nurturing every student —

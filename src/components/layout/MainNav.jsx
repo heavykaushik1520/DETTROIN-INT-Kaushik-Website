@@ -1,53 +1,25 @@
-import { ChevronDownIcon } from '../icons'
+import { Link, useLocation } from 'react-router-dom'
 import { NAV_ITEMS } from '../../constants/contact'
-
-function NavDropdown({ label, scrolled }) {
-  return (
-    <div className="border-b-2 border-transparent px-3 py-3.5 hover:border-amber-400">
-      <div className="relative">
-        <button
-          type="button"
-          className={`flex items-center gap-1 py-1 text-sm font-medium transition-colors ${
-            scrolled
-              ? 'text-gray-700 hover:text-[#0d3b86]'
-              : 'text-white/90 hover:text-white'
-          }`}
-        >
-          {label}
-          <ChevronDownIcon className="transition-transform" />
-        </button>
-      </div>
-    </div>
-  )
-}
 
 export default function MainNav({
   mobile = false,
   onNavigate,
   scrolled = false,
 }) {
+  const { pathname } = useLocation()
+
   if (mobile) {
     return (
       <nav className="flex flex-col gap-1" aria-label="Main navigation">
-        {NAV_ITEMS.map((item) =>
-          item.type === 'dropdown' ? (
-            <button
+        {NAV_ITEMS.map((item) => {
+          const isActive = pathname === item.href
+          return (
+            <Link
               key={item.label}
-              type="button"
-              className={`flex items-center justify-between px-1 py-2.5 text-left text-sm font-medium ${
-                scrolled ? 'text-gray-700' : 'text-white/90'
-              }`}
-            >
-              {item.label}
-              <ChevronDownIcon />
-            </button>
-          ) : (
-            <a
-              key={item.label}
-              href={item.href}
+              to={item.href}
               onClick={onNavigate}
               className={
-                item.active
+                isActive
                   ? 'border-l-2 border-amber-400 py-2.5 pl-3 text-sm font-semibold text-amber-500'
                   : `py-2.5 pl-3 text-sm font-medium ${
                       scrolled ? 'text-gray-700' : 'text-white/90'
@@ -55,9 +27,9 @@ export default function MainNav({
               }
             >
               {item.label}
-            </a>
-          ),
-        )}
+            </Link>
+          )
+        })}
       </nav>
     )
   }
@@ -78,23 +50,18 @@ export default function MainNav({
     >
       <div className="container mx-auto px-4">
         <div className="hidden items-center gap-1 lg:flex">
-          {NAV_ITEMS.map((item) =>
-            item.type === 'dropdown' ? (
-              <NavDropdown
+          {NAV_ITEMS.map((item) => {
+            const isActive = pathname === item.href
+            return (
+              <Link
                 key={item.label}
-                label={item.label}
-                scrolled={scrolled}
-              />
-            ) : (
-              <a
-                key={item.label}
-                href={item.href}
-                className={item.active ? linkActive : linkBase}
+                to={item.href}
+                className={isActive ? linkActive : linkBase}
               >
                 {item.label}
-              </a>
-            ),
-          )}
+              </Link>
+            )
+          })}
         </div>
       </div>
     </nav>

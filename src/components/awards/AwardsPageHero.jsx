@@ -25,7 +25,7 @@ export default function AwardsPageHero() {
           aria-label="Breadcrumb"
         >
           <Link to="/" className="transition-colors hover:text-amber-500">
-            Rainbow International
+            Horizon International
           </Link>
           <span className="flex items-center gap-1.5">
             <ChevronRightIcon size={14} />
