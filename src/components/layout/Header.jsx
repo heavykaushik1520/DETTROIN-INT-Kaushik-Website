@@ -1,13 +1,21 @@
 import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import AdmissionsBanner from './AdmissionsBanner'
 import Navbar from './Navbar'
 import MainNav from './MainNav'
 
 export default function Header() {
+  const { pathname } = useLocation()
+  const isHome = pathname === '/'
   const [menuOpen, setMenuOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(!isHome)
 
   useEffect(() => {
+    if (!isHome) {
+      setScrolled(true)
+      return undefined
+    }
+
     function onScroll() {
       setScrolled(window.scrollY > 20)
     }
@@ -15,7 +23,7 @@ export default function Header() {
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [isHome])
 
   return (
     <header

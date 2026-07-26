@@ -1,7 +1,19 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './components/layout/Layout'
 import Home from './pages/Home'
+import AwardsAchievements from './pages/AwardsAchievements'
 
 function App() {
-  return <Home />
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/awards-achievements" element={<AwardsAchievements />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App
