@@ -24,13 +24,9 @@ export const CONTACT = {
 
 export const NAV_ITEMS = [
   { label: 'Home', href: '/' },
-  { label: 'About Us', type: 'dropdown' },
-  { label: 'Academics', type: 'dropdown' },
-  { label: 'At Rainbow', type: 'dropdown' },
-  { label: 'Gallery', type: 'dropdown' },
-  { label: 'Admissions', href: '/admissions', active: true },
-  { label: 'Blogs', href: '/blogs' },
-  { label: 'Explore', type: 'dropdown' },
-  { label: 'Connect with us', href: '/contact-us' },
-  { label: 'Career', href: '/career' },
+  { label: 'About Us', href: '/about-us' },
+  { label: 'Academics', href: '/academics' },
+  { label: 'Admissions', href: '/admissions' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Connect With Us', href: '/contact-us' },
 ]
