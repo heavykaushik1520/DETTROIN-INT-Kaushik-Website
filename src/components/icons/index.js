@@ -1,0 +1,7 @@
+export { PhoneIcon } from './PhoneIcon'
+export { WhatsAppIcon } from './WhatsAppIcon'
+export { ClockIcon } from './ClockIcon'
+export { MapPinIcon } from './MapPinIcon'
+export { MenuIcon } from './MenuIcon'
+export { CloseIcon } from './CloseIcon'
+export { ChevronDownIcon } from './ChevronDownIcon'
