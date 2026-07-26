@@ -6,3 +6,36 @@ body,
   margin: 0;
   min-height: 100%;
 }
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-33.33%);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-33.33%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-scroll-up {
+  animation: scroll-up 12s linear infinite;
+}
+
+.animate-scroll-down {
+  animation: scroll-down 12s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll-up,
+  .animate-scroll-down {
+    animation: none;
+  }
+}
