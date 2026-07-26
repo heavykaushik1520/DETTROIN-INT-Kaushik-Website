@@ -1,38 +1,54 @@
-export const AWARDS_COLUMN_UP = [
+import indiaToday from '../assets/img/awards-logo/india-today.webp'
+import nsaAward from '../assets/img/awards-logo/nsa-award.webp'
+import wesMumbai from '../assets/img/awards-logo/wes-mumbai.webp'
+import economicTimes from '../assets/img/awards-logo/economic-times.webp'
+import scoonews from '../assets/img/awards-logo/scoonews.webp'
+import tmcLogo from '../assets/img/awards-logo/tmc-logo.webp'
+
+const RAW_AWARDS_COLUMN_UP = [
   {
     alt: 'India Today Award',
     href: 'https://www.indiatoday.in/',
-    src: '/images/awards/india-today.webp',
+    src: indiaToday,
   },
   {
     alt: 'National School Awards',
     href: 'https://nationalschoolawards.in/',
-    src: '/images/awards/nsa-award.webp',
+    src: nsaAward,
   },
   {
     alt: 'World Education Summit',
     href: 'https://wes.eletsonline.com/',
-    src: '/images/awards/wes-mumbai.webp',
+    src: wesMumbai,
   },
 ]
 
-export const AWARDS_COLUMN_DOWN = [
+const RAW_AWARDS_COLUMN_DOWN = [
   {
     alt: 'Economic Times',
     href: 'https://economictimes.indiatimes.com/',
-    src: '/images/awards/economic-times.webp',
+    src: economicTimes,
   },
   {
     alt: 'Scoo News',
     href: 'https://scoonews.com/',
-    src: '/images/awards/scoonews.webp',
+    src: scoonews,
   },
   {
     alt: 'Thane Municipal Corp',
     href: 'https://thanecity.gov.in/tmc/',
-    src: '/images/awards/tmc-logo.webp',
+    src: tmcLogo,
   },
 ]
+
+function withValidLogos(awards) {
+  return awards.filter((award) => Boolean(award.src))
+}
+
+export const AWARDS_COLUMN_UP = withValidLogos(RAW_AWARDS_COLUMN_UP)
+export const AWARDS_COLUMN_DOWN = withValidLogos(RAW_AWARDS_COLUMN_DOWN)
+export const HAS_AWARD_LOGOS =
+  AWARDS_COLUMN_UP.length > 0 || AWARDS_COLUMN_DOWN.length > 0
 
 export const ACHIEVEMENT_CARDS = [
   {

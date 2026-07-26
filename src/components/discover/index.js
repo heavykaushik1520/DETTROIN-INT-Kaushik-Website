@@ -1,1 +1,1 @@
-export { default as DiscoverHorizon } from './DiscoverRainbow'
+export { default as DiscoverHorizon } from './DiscoverHorizon'

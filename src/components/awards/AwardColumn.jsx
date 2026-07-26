@@ -1,4 +1,43 @@
+import { useState } from 'react'
+
 function AwardCard({ award, className = '' }) {
+  const [failed, setFailed] = useState(false)
+
+  if (failed || !award.src) {
+    return (
+      <div
+        className={`flex h-[100px] w-[140px] flex-shrink-0 items-center justify-center rounded-2xl bg-white/95 p-3 text-center shadow-lg ${className}`}
+      >
+        <span className="text-xs font-semibold leading-snug text-[#091a4f]">
+          {award.alt}
+        </span>
+      </div>
+    )
+  }
+
+  const content = (
+    <img
+      alt={award.alt}
+      width="100"
+      height="60"
+      loading="lazy"
+      decoding="async"
+      className="max-h-full max-w-full object-contain"
+      src={award.src}
+      onError={() => setFailed(true)}
+    />
+  )
+
+  if (!award.href) {
+    return (
+      <div
+        className={`flex h-[100px] w-[140px] flex-shrink-0 items-center justify-center rounded-2xl bg-white p-4 shadow-lg ${className}`}
+      >
+        {content}
+      </div>
+    )
+  }
+
   return (
     <a
       href={award.href}
@@ -6,20 +45,14 @@ function AwardCard({ award, className = '' }) {
       rel="noopener noreferrer"
       className={`flex h-[100px] w-[140px] flex-shrink-0 items-center justify-center rounded-2xl bg-white p-4 shadow-lg transition-shadow hover:shadow-xl ${className}`}
     >
-      <img
-        alt={award.alt}
-        width="100"
-        height="60"
-        loading="lazy"
-        decoding="async"
-        className="max-h-full max-w-full object-contain"
-        src={award.src}
-      />
+      {content}
     </a>
   )
 }
 
 export default function AwardColumn({ awards, direction = 'up' }) {
+  if (!awards?.length) return null
+
   const items = [...awards, ...awards, ...awards]
   const animationClass =
     direction === 'up' ? 'animate-scroll-up' : 'animate-scroll-down'

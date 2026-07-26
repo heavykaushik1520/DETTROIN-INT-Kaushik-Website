@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
 import { ArrowRightIcon } from '../icons'
-import { AWARDS_COLUMN_DOWN, AWARDS_COLUMN_UP } from '../../constants/awards'
+import {
+  AWARDS_COLUMN_DOWN,
+  AWARDS_COLUMN_UP,
+  HAS_AWARD_LOGOS,
+} from '../../constants/awards'
 import AwardColumn from './AwardColumn'
 
 function AwardsCopy() {
@@ -40,10 +44,16 @@ function AwardsCopy() {
 }
 
 function AwardColumns({ className }) {
+  if (!HAS_AWARD_LOGOS) return null
+
   return (
     <div className={className}>
-      <AwardColumn awards={AWARDS_COLUMN_UP} direction="up" />
-      <AwardColumn awards={AWARDS_COLUMN_DOWN} direction="down" />
+      {AWARDS_COLUMN_UP.length > 0 && (
+        <AwardColumn awards={AWARDS_COLUMN_UP} direction="up" />
+      )}
+      {AWARDS_COLUMN_DOWN.length > 0 && (
+        <AwardColumn awards={AWARDS_COLUMN_DOWN} direction="down" />
+      )}
     </div>
   )
 }

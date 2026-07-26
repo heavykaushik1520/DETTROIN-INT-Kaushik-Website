@@ -82,19 +82,23 @@ export default function Footer() {
                 Follow Us
               </p>
               <div className="flex gap-3">
-                {FOOTER_SOCIAL.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={item.label}
-                    className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 transition-all duration-300 hover:border-yellow-400/60 hover:text-yellow-400"
-                    style={socialIconBg}
-                  >
-                    <SocialIcon name={item.icon} />
-                  </a>
-                ))}
+                {FOOTER_SOCIAL.map((item) => {
+                  const isExternal = item.href.startsWith('http')
+                  return (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      {...(isExternal
+                        ? { target: '_blank', rel: 'noopener noreferrer' }
+                        : {})}
+                      aria-label={item.label}
+                      className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 transition-all duration-300 hover:border-yellow-400/60 hover:text-yellow-400"
+                      style={socialIconBg}
+                    >
+                      <SocialIcon name={item.icon} />
+                    </a>
+                  )
+                })}
               </div>
             </div>
 

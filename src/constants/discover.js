@@ -1,7 +1,7 @@
-import awardsImg from '../assets/img/life-at-rainbow/awards.webp'
-import amenitiesImg from '../assets/img/life-at-rainbow/amenities.jpg'
-import studentAchievementsImg from '../assets/img/life-at-rainbow/student-achievements.webp'
-import safetySecurityImg from '../assets/img/life-at-rainbow/safety-security.webp'
+import awardsImg from '../assets/img/life-at-horizon/awards.webp'
+import amenitiesImg from '../assets/img/life-at-horizon/amenities.jpg'
+import studentAchievementsImg from '../assets/img/life-at-horizon/student-achievements.webp'
+import safetySecurityImg from '../assets/img/life-at-horizon/safety-security.webp'
 
 export const DISCOVER_CARDS = [
   {

@@ -119,10 +119,7 @@ export default function ContactSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-bold text-white transition-all hover:opacity-90 hover:shadow-lg"
-              style={{
-                background:
-                  'linear-gradient(135deg, rgb(18, 140, 75) 0%, rgb(37, 211, 102) 100%)',
-              }}
+              style={{ background: 'rgb(18, 140, 75)' }}
             >
               <MessageCircleIcon size={17} />
               Chat on WhatsApp
@@ -243,10 +240,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   className="w-full rounded-xl py-3.5 text-sm font-bold text-white transition-all hover:opacity-90 hover:shadow-lg sm:w-auto sm:px-10"
-                  style={{
-                    background:
-                      'linear-gradient(135deg, rgb(9, 26, 79) 0%, rgb(26, 86, 219) 100%)',
-                  }}
+                  style={{ background: 'rgb(9, 26, 79)' }}
                 >
                   Send Message
                 </button>

@@ -127,7 +127,7 @@ export default function WhyChooseUs() {
               Book a Campus Visit
             </Link>
             <Link
-              to="/about-horizon-international-school"
+              to="/about-us"
               data-testid="btn-about-learn-more"
               className="group inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:opacity-90 hover:shadow-lg"
               style={{

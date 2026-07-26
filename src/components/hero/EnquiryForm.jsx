@@ -178,10 +178,7 @@ export default function EnquiryForm() {
               type="submit"
               data-testid="button-hero-submit"
               className="flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-bold text-white transition-all hover:opacity-90 hover:shadow-lg active:scale-[0.99] disabled:opacity-60"
-              style={{
-                background:
-                  'linear-gradient(135deg, rgb(9, 26, 79) 0%, rgb(26, 86, 219) 100%)',
-              }}
+              style={{ background: 'rgb(9, 26, 79)' }}
             >
               <CalendarCheckIcon size={16} />
               Book a Campus Visit
@@ -193,10 +190,7 @@ export default function EnquiryForm() {
               rel="noopener noreferrer"
               data-testid="button-hero-whatsapp"
               className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold text-white transition-all hover:opacity-90 hover:shadow-lg active:scale-[0.99]"
-              style={{
-                background:
-                  'linear-gradient(135deg, rgb(18, 140, 75) 0%, rgb(37, 211, 102) 100%)',
-              }}
+              style={{ background: 'rgb(18, 140, 75)' }}
             >
               <MessageCircleIcon size={17} />
               Chat on WhatsApp
