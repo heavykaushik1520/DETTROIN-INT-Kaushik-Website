@@ -1,16 +1,16 @@
 export const TICKER_TEXT = 'ADMISSIONS OPEN · ACADEMIC YEAR 2026–27'
 
 export const WHATSAPP_HREF =
-  'https://wa.me/918291568972?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20admissions.'
+  'https://wa.me/919175866586?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20admissions.'
 
 export const CONTACT = {
   phonePrimary: {
-    label: '+91 82915 68972',
-    href: 'tel:+918291568972',
+    label: '+91 91758 66586',
+    href: 'tel:+919175866586',
   },
   phoneSecondary: {
-    label: '(022) 69105000',
-    href: 'tel:02269105000',
+    label: '(022) 69000000',
+    href: 'tel:02269000000',
   },
   hours: {
     days: 'Mon - Sat',
@@ -18,7 +18,7 @@ export const CONTACT = {
   },
   address: {
     line1: 'Cosmos Arcade,',
-    line2: 'Brahmand Phase 4, Thane',
+    line2: 'Hiranandani Estate, Mumbai',
   },
 }
 
