@@ -76,7 +76,7 @@ export default function WhyChooseUs() {
           <h2 className="mb-3 text-3xl leading-tight font-extrabold tracking-tight text-gray-900 md:text-4xl">
             Why Parents Trust{' '}
             <span style={{ color: 'rgb(9, 26, 79)' }}>
-              Rainbow International School
+              Horizon International School
             </span>
           </h2>
           <p className="mx-auto max-w-xl text-base text-gray-500">
@@ -127,7 +127,7 @@ export default function WhyChooseUs() {
               Book a Campus Visit
             </Link>
             <Link
-              to="/about-rainbow-international-school"
+              to="/about-horizon-international-school"
               data-testid="btn-about-learn-more"
               className="group inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:opacity-90 hover:shadow-lg"
               style={{

@@ -41,7 +41,7 @@ export default function AwardsGrid() {
             Our Achievements
           </span>
           <p className="mx-auto max-w-2xl text-lg text-gray-600">
-            Accolades earned by Rainbow International School for being one of
+            Accolades earned by Horizon International School for being one of
             the best & most promising international schools in Thane for the
             decade in the educational sphere.
           </p>

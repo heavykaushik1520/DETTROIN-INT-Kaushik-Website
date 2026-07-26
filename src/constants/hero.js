@@ -1,5 +1,5 @@
 export const HERO_WHATSAPP_HREF =
-  'https://wa.me/918291568972?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20admissions%20at%20Rainbow%20International%20School.'
+  'https://wa.me/918291568972?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20admissions%20at%20Horizon%20International%20School.'
 
 export const HERO_STATS = [
   { value: 'CBSE', label: 'Affiliated · #11300000' },
