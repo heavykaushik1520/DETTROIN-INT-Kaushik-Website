@@ -1,4 +1,4 @@
-import heroImg from '../../assets/img/hero-section/hero-senior-secondary.webp'
+import heroImg from '../../assets/img/hero-section/hero-section-image.png'
 import HeroContent from './HeroContent'
 import EnquiryForm from './EnquiryForm'
 
