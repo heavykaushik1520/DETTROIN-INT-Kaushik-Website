@@ -9,32 +9,38 @@ import {
 import { CONTACT, WHATSAPP_HREF } from '../../constants/contact'
 import MainNav from './MainNav'
 
-function ContactDetails({ compact = false }) {
-  const textMuted = 'text-xs text-white/80 transition-colors'
-  const iconClass =
-    'mt-0.5 shrink-0 text-amber-300 transition-colors'
+function ContactDetails({ compact = false, scrolled = false }) {
+  const textMuted = scrolled
+    ? 'text-xs text-gray-500 transition-colors'
+    : 'text-xs text-white/80 transition-colors'
+  const iconClass = scrolled
+    ? 'mt-0.5 shrink-0 text-amber-500 transition-colors'
+    : 'mt-0.5 shrink-0 text-amber-300 transition-colors'
+  const phonePrimary = scrolled
+    ? 'block text-sm font-semibold text-gray-900 transition-colors hover:text-[#0d3b86]'
+    : 'block text-sm font-semibold text-white transition-colors hover:text-amber-200'
+  const phoneSecondary = scrolled
+    ? 'block text-xs text-gray-500 transition-colors hover:text-gray-800'
+    : 'block text-xs text-white/80 transition-colors hover:text-white'
+  const divider = scrolled
+    ? 'h-8 w-px bg-gray-200 transition-colors'
+    : 'h-8 w-px bg-white/20 transition-colors'
 
   return (
     <>
       <div className="flex items-start gap-2">
         <PhoneIcon className={iconClass} />
         <div>
-          <a
-            href={CONTACT.phonePrimary.href}
-            className="block text-sm font-semibold text-white transition-colors hover:text-amber-200"
-          >
+          <a href={CONTACT.phonePrimary.href} className={phonePrimary}>
             {CONTACT.phonePrimary.label}
           </a>
-          <a
-            href={CONTACT.phoneSecondary.href}
-            className="block text-xs text-white/80 transition-colors hover:text-white"
-          >
+          <a href={CONTACT.phoneSecondary.href} className={phoneSecondary}>
             {CONTACT.phoneSecondary.label}
           </a>
         </div>
       </div>
 
-      {!compact && <div className="h-8 w-px bg-white/20 transition-colors" />}
+      {!compact && <div className={divider} />}
 
       <div className="flex items-start gap-2">
         <ClockIcon className={iconClass} />
@@ -44,7 +50,7 @@ function ContactDetails({ compact = false }) {
         </div>
       </div>
 
-      {!compact && <div className="h-8 w-px bg-white/20 transition-colors" />}
+      {!compact && <div className={divider} />}
 
       <div className="flex items-start gap-2">
         <MapPinIcon className={iconClass} />
@@ -57,10 +63,14 @@ function ContactDetails({ compact = false }) {
   )
 }
 
-export default function Navbar({ menuOpen, setMenuOpen }) {
+export default function Navbar({ menuOpen, setMenuOpen, scrolled = false }) {
   return (
     <>
-      <div className="border-b border-white/10 transition-all duration-300">
+      <div
+        className={`transition-all duration-300 ${
+          scrolled ? 'border-b border-gray-200' : 'border-b border-white/10'
+        }`}
+      >
         <div className="container mx-auto flex items-center justify-between gap-6 px-4 py-2">
           <a href="/" className="flex shrink-0 items-center gap-2">
             <img
@@ -73,8 +83,14 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
           </a>
 
           <div className="ml-auto hidden items-center gap-8 lg:flex">
-            <ContactDetails />
-            <div className="h-8 w-px bg-white/20 transition-colors" />
+            <ContactDetails scrolled={scrolled} />
+            <div
+              className={
+                scrolled
+                  ? 'h-8 w-px bg-gray-200 transition-colors'
+                  : 'h-8 w-px bg-white/20 transition-colors'
+              }
+            />
             <a
               href={WHATSAPP_HREF}
               target="_blank"
@@ -112,7 +128,9 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
             </a>
             <button
               type="button"
-              className="flex min-h-[44px] min-w-[44px] items-center justify-center p-2.5 text-white transition-colors"
+              className={`flex min-h-[44px] min-w-[44px] items-center justify-center p-2.5 transition-colors ${
+                scrolled ? 'text-gray-900' : 'text-white'
+              }`}
               data-testid="button-mobile-menu"
               aria-label={menuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={menuOpen}
@@ -125,12 +143,22 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
       </div>
 
       {menuOpen && (
-        <div className="border-b border-white/10 bg-[#091a4f]/95 px-4 py-4 backdrop-blur-sm lg:hidden">
-          <div className="container mx-auto flex max-w-lg flex-col gap-5 text-white">
+        <div
+          className={`border-b px-4 py-4 backdrop-blur-sm lg:hidden ${
+            scrolled
+              ? 'border-gray-200 bg-white text-gray-900'
+              : 'border-white/10 bg-[#091a4f]/95 text-white'
+          }`}
+        >
+          <div className="container mx-auto flex max-w-lg flex-col gap-5">
             <div className="flex flex-col gap-4">
-              <ContactDetails compact />
+              <ContactDetails compact scrolled={scrolled} />
             </div>
-            <MainNav mobile onNavigate={() => setMenuOpen(false)} />
+            <MainNav
+              mobile
+              scrolled={scrolled}
+              onNavigate={() => setMenuOpen(false)}
+            />
           </div>
         </div>
       )}
