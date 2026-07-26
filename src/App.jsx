@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout'
 import Home from './pages/Home'
 import AwardsAchievements from './pages/AwardsAchievements'
 import ContactUs from './pages/ContactUs'
+import Gallery from './pages/Gallery'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/awards-achievements" element={<AwardsAchievements />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Route>
       </Routes>
     </BrowserRouter>

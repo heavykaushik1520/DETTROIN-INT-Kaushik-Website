@@ -9,6 +9,7 @@ import {
 } from '../icons'
 import { CONTACT, NAV_ITEMS } from '../../constants/contact'
 import { FOOTER_EMAIL, FOOTER_SOCIAL } from '../../constants/footer'
+import { Logo } from '../shared'
 
 const socialIconBg = { background: 'rgba(255, 255, 255, 0.05)' }
 const contactIconBg = {
@@ -55,10 +56,9 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             <div>
               <div className="mb-6 flex items-center gap-3">
-                <img
-                  alt="Horizon International School Logo"
+                <Logo
+                  to={null}
                   className="h-14 w-14 object-contain"
-                  src="/ris-logo.png"
                 />
                 <div className="flex flex-col leading-tight">
                   <span className="text-[17px] font-black tracking-tight">
