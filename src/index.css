@@ -7,6 +7,27 @@ body,
   min-height: 100%;
 }
 
+@media (min-width: 1024px) {
+  .container.mx-auto {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container.mx-auto {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container.mx-auto {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
 @keyframes scroll-up {
   0% {
     transform: translateY(0);

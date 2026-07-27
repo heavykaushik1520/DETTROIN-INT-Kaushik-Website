@@ -9,7 +9,6 @@ import charuImg from '../assets/img/our-team/Charu-Wahi-img.jpeg'
 import kanishkImg from '../assets/img/our-team/Kanishk-Bhargava-img.jpeg'
 import abhayImg from '../assets/img/our-team/Abhay-Goel.webp'
 import abhaImg from '../assets/img/our-team/Abha-Thakur-img.jpg'
-import aakankshaImg from '../assets/img/our-team/cee - Vasant Valley School_files/Aakanksha-Kapoor.jpg'
 
 const TEAM_MEMBERS = [
   {
@@ -49,13 +48,8 @@ const TEAM_MEMBERS = [
       'Consultant- Research, Practice and Capacity Building',
     img: abhaImg,
     bio: `Abha Thakur is an education leader and coach with over two decades of experience across teaching, curriculum design, program leadership, and education reform. She has worked closely with schools, NGOs, government systems, and Ed-tech organizations to strengthen pedagogy, assessment, and teacher professional development, with deep expertise in foundational learning. Abha has completed her M.Ed. from the University of Delhi and her undergraduate degree in Elementary Education from Gargi College, University of Delhi. Abha is known for working closely with people, reflecting on her practice, and creating learning experiences that are meaningful and rooted in real contexts. Outside of work, she enjoys good conversations, travel, music, and spending time with friends and family.`,
-  },
-  {
-    name: 'Aakanksha Kapoor',
-    designation: 'Marketing Lead',
-    img: aakankshaImg,
-    bio: `Aakanksha is a marketing strategist with 14 years of experience building purpose-driven brands. She co-founded I Say Organic and Minds At Play and now aims help brands find their voice and bring visibility to organizations creating positive change.`,
-  },
+  }
+  
 ]
 
 function initials(name) {

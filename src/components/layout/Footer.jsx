@@ -227,7 +227,7 @@ export default function Footer() {
                 <br />
                 {FOOTER_CAMPUS.line2}
               </li>
-              <li>
+              {/* <li>
                 <a
                   href={FOOTER_MAP_URL}
                   target="_blank"
@@ -236,7 +236,7 @@ export default function Footer() {
                 >
                   SEE MAP
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

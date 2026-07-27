@@ -248,17 +248,6 @@ export default function ContactSection() {
             </div>
           </div>
         </div>
-
-        <div className="mt-12 overflow-hidden rounded-2xl border border-gray-100 shadow-sm">
-          <iframe
-            title="Vasant Valley School location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.0312895011443!2d77.14169947495316!3d28.533446788574253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c2dca9fdfe5%3A0xd8b5e5dc38264933!2sVasant%20Valley%20School!5e1!3m2!1sen!2sin!4v1785133064265!5m2!1sen!2sin"
-            className="h-64 w-full border-0 md:h-80"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          />
-        </div>
       </div>
     </section>
   )
