@@ -19,6 +19,7 @@ import SpecialEducationNeeds from './pages/SpecialEducationNeeds'
 import Academics from './pages/Academics'
 import Placements from './pages/Placements'
 import Admissions from './pages/Admissions'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
             path="/special-education-needs"
             element={<SpecialEducationNeeds />}
           />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

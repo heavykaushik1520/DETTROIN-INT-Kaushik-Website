@@ -20,4 +20,5 @@ export const PAGE_TITLES = {
   academics: `Academics | ${SITE_NAME}`,
   placements: `Placements | ${SITE_NAME}`,
   admissions: `Admissions | ${SITE_NAME}`,
+  notFound: `Page Not Found | ${SITE_NAME}`,
 }
