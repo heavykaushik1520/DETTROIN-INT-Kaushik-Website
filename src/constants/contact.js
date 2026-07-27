@@ -70,6 +70,10 @@ export const EXPLORE_DROPDOWN_ITEMS = [
     href: '/infrastructure',
   },
   {
+    label: 'Special Education Needs',
+    href: '/special-education-needs',
+  },
+  {
     label: 'Gallery',
     href: '/gallery',
   },

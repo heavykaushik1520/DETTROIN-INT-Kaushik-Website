@@ -16,6 +16,7 @@ export const PAGE_TITLES = {
   newsEvents: `News & Events | ${SITE_NAME}`,
   aDayInSchool: `A Day In School | ${SITE_NAME}`,
   infrastructure: `Infrastructure | ${SITE_NAME}`,
+  specialEducationNeeds: `Special Education Needs | ${SITE_NAME}`,
   academics: `Academics | ${SITE_NAME}`,
   admissions: `Admissions | ${SITE_NAME}`,
 }
