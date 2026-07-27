@@ -217,7 +217,7 @@ function SectionLabel({ children }) {
     <div className="mb-4">
       <h3
         className="text-lg font-black md:text-xl"
-        style={{ color: 'rgb(13, 59, 134)' }}
+        style={{ color: 'rgb(194, 24, 53)' }}
       >
         {children}
       </h3>
@@ -248,7 +248,7 @@ function BulletList({
             />
             <span className="text-sm leading-relaxed text-gray-700 md:text-base">
               {title && (
-                <strong style={{ color: 'rgb(13, 59, 134)' }}>{title}</strong>
+                <strong style={{ color: 'rgb(194, 24, 53)' }}>{title}</strong>
               )}
               {title ? `${titleSeparator}${text}` : text}
             </span>
@@ -267,11 +267,11 @@ function SubjectTable({ rows }) {
           {rows.map((row, index) => (
             <tr
               key={row.category}
-              className={index % 2 === 0 ? 'bg-[#eef5ff]/60' : 'bg-white'}
+              className={index % 2 === 0 ? 'bg-[#fdf2f3]/60' : 'bg-white'}
             >
               <td
                 className="w-40 border-b border-gray-100 px-4 py-4 align-top text-xs font-black tracking-wide uppercase md:w-48 md:text-sm"
-                style={{ color: 'rgb(13, 59, 134)' }}
+                style={{ color: 'rgb(194, 24, 53)' }}
               >
                 {row.category}
               </td>
@@ -310,7 +310,7 @@ function ContentCard({ children, className = '' }) {
 export default function AcademicsContent() {
   return (
     <>
-      <section className="bg-[#eef5ff] py-16 md:py-20">
+      <section className="bg-[#fdf2f3] py-16 md:py-20">
         <div className="container mx-auto max-w-4xl px-4">
           <div className="overflow-hidden rounded-3xl border border-gray-100 bg-white px-6 py-10 shadow-sm md:px-12 md:py-14">
             <div className="mb-6 text-center">
@@ -320,7 +320,7 @@ export default function AcademicsContent() {
               <div className="mx-auto mt-2 mb-5 h-0.5 w-8 bg-amber-400" />
               <h2
                 className="text-xl leading-snug font-black md:text-2xl lg:text-3xl"
-                style={{ color: 'rgb(13, 59, 134)' }}
+                style={{ color: 'rgb(194, 24, 53)' }}
               >
                 Vasant Valley School is a registered Cambridge International
                 School offering the Cambridge curriculum for Classes 8-12.
@@ -395,7 +395,7 @@ export default function AcademicsContent() {
               <SectionLabel>Why Cambridge Foundation Year?</SectionLabel>
               <BulletList
                 items={FOUNDATION_REASONS}
-                color="rgb(13, 59, 134)"
+                color="rgb(194, 24, 53)"
               />
             </ContentCard>
 
@@ -423,19 +423,19 @@ export default function AcademicsContent() {
         </div>
       </section>
 
-      <section className="bg-[#eef5ff] py-16 md:py-20">
+      <section className="bg-[#fdf2f3] py-16 md:py-20">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
             <ContentCard>
               <SectionLabel>Why Cambridge IGCSE?</SectionLabel>
               <div className="mb-4">
-                <BulletList items={IGCSE_WHY} color="rgb(13, 59, 134)" />
+                <BulletList items={IGCSE_WHY} color="rgb(194, 24, 53)" />
               </div>
               <div className="mb-4">
                 <BulletList items={IGCSE_SKILLS} nested />
               </div>
               <div className="mb-8">
-                <BulletList items={IGCSE_WHY_MORE} color="rgb(13, 59, 134)" />
+                <BulletList items={IGCSE_WHY_MORE} color="rgb(194, 24, 53)" />
               </div>
 
               <SectionLabel>
@@ -475,7 +475,7 @@ export default function AcademicsContent() {
               <div className="mb-6">
                 <BulletList
                   items={ICE_CATEGORIES}
-                  color="rgb(13, 59, 134)"
+                  color="rgb(194, 24, 53)"
                   titleSeparator=" - "
                 />
               </div>
@@ -500,7 +500,7 @@ export default function AcademicsContent() {
               <div className="mb-4">
                 <BulletList
                   items={AS_A_LEVEL_POINTS}
-                  color="rgb(13, 59, 134)"
+                  color="rgb(194, 24, 53)"
                 />
               </div>
               <div className="mb-8">
@@ -514,14 +514,14 @@ export default function AcademicsContent() {
               </p>
               <ol className="mb-4 list-decimal space-y-4 pl-5 text-sm leading-relaxed text-gray-700 md:text-base">
                 <li>
-                  <strong style={{ color: 'rgb(13, 59, 134)' }}>
+                  <strong style={{ color: 'rgb(194, 24, 53)' }}>
                     Take the Cambridge International AS Level only:
                   </strong>{' '}
                   The syllabus content is half a Cambridge International A
                   Level.
                 </li>
                 <li>
-                  <strong style={{ color: 'rgb(13, 59, 134)' }}>
+                  <strong style={{ color: 'rgb(194, 24, 53)' }}>
                     Staged Assessment Route:
                   </strong>
                   <ul className="mt-3 space-y-3">
@@ -584,7 +584,7 @@ export default function AcademicsContent() {
               <div className="mt-6">
                 <p
                   className="mb-3 text-sm font-black"
-                  style={{ color: 'rgb(13, 59, 134)' }}
+                  style={{ color: 'rgb(194, 24, 53)' }}
                 >
                   Please note:
                 </p>

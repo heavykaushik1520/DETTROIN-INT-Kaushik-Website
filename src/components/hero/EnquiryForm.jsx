@@ -35,7 +35,7 @@ export default function EnquiryForm() {
           <div className="flex items-center gap-3">
             <div
               className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full"
-              style={{ background: 'rgb(13, 59, 134)' }}
+              style={{ background: 'rgb(194, 24, 53)' }}
             >
               <CalendarCheckIcon className="text-white" size={17} />
             </div>
@@ -178,7 +178,7 @@ export default function EnquiryForm() {
               type="submit"
               data-testid="button-hero-submit"
               className="flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-bold text-white transition-all hover:opacity-90 hover:shadow-lg active:scale-[0.99] disabled:opacity-60"
-              style={{ background: 'rgb(9, 26, 79)' }}
+              style={{ background: 'rgb(158, 14, 33)' }}
             >
               <CalendarCheckIcon size={16} />
               Book a Campus Visit

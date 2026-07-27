@@ -24,22 +24,21 @@ function AwardsCopy() {
         <span className="text-amber-400">International School</span>
       </h2>
 
-      <p className="mx-auto mb-4 max-w-lg text-[15px] leading-[1.8] text-blue-200/80 lg:mx-0">
-        {AWARDS_ABOUT_PARAGRAPHS[0]}
-      </p>
-
-      <p className="mx-auto mb-4 max-w-lg text-[15px] leading-[1.8] text-blue-200/80 lg:mx-0">
-        {AWARDS_ABOUT_PARAGRAPHS[1]}
-      </p>
-
-      <p className="mx-auto mb-8 max-w-lg text-[15px] leading-[1.8] text-blue-200/80 lg:mx-0">
-        {AWARDS_ABOUT_PARAGRAPHS[2]}
-      </p>
+      {AWARDS_ABOUT_PARAGRAPHS.map((paragraph, index) => (
+        <p
+          key={paragraph}
+          className={`mx-auto max-w-lg text-[15px] leading-[1.8] text-red-100/80 lg:mx-0 ${
+            index === AWARDS_ABOUT_PARAGRAPHS.length - 1 ? 'mb-8' : 'mb-4'
+          }`}
+        >
+          {paragraph}
+        </p>
+      ))}
 
       <Link
         to="/about-us"
         data-testid="button-awards-cta"
-        className="group inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-bold text-[#091a4f] transition-all duration-300 hover:opacity-90 hover:shadow-lg"
+        className="group inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-bold text-[#9e0e21] transition-all duration-300 hover:opacity-90 hover:shadow-lg"
         style={{ background: 'rgb(251, 191, 36)', borderRadius: '9999px' }}
       >
         About Us
@@ -70,7 +69,7 @@ export default function Awards() {
       className="relative overflow-hidden"
       style={{
         background:
-          'linear-gradient(135deg, rgb(9, 26, 79) 0%, rgb(13, 59, 134) 60%, rgb(9, 26, 79) 100%)',
+          'linear-gradient(135deg, rgb(158, 14, 33) 0%, rgb(194, 24, 53) 60%, rgb(158, 14, 33) 100%)',
       }}
     >
       <div className="container mx-auto px-4 py-20">

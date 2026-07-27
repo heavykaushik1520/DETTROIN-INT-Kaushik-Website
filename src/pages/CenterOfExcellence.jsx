@@ -91,7 +91,7 @@ export default function CenterOfExcellence() {
                 <div className="flex flex-1 flex-col p-5">
                   <h3
                     className="mb-2 text-lg font-black"
-                    style={{ color: 'rgb(13, 59, 134)' }}
+                    style={{ color: 'rgb(194, 24, 53)' }}
                   >
                     {program.title}
                   </h3>

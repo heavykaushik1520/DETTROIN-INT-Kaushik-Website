@@ -6,9 +6,8 @@ import learningImg from '../assets/img/center-of-excellence/image-vv-6.jpg'
 import campusBanner from '../assets/img/infrastructure/infra-banner-1.jpg'
 
 export const AWARDS_ABOUT_PARAGRAPHS = [
-  'The Vasant Valley Centre for Excellence in Education, Vasant Valley School (CEE@VVS) was born out of the experience and expertise we have gained over the last thirty-six years of running Vasant Valley School.',
-  'Vasant Valley School has consistently been ranked as one of the top co-educational day schools in India and Delhi/NCR over the last 15 years, frequently securing the No. 1 or No. 2 position in prominent rankings.',
-  "Today Vasant Valley School is recognised as an 'Institution of Excellence' in the field of school education in India and we rely on this wide knowledge and experience of running one of the best schools in the country.",
+  'Vasant Valley School was established in 1990 by Mr. Aroon Purie and Mrs. Rekha Purie as an initiative of the Education Today Trust.',
+  'The school began its journey with around 200 students and 16 teachers in July 1990. It is a self-financing inclusive day school spread over eight acres of land in Vasant Kunj, New Delhi, India.',
 ]
 
 const RAW_AWARDS_COLUMN_UP = [

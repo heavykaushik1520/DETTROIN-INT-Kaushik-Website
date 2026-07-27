@@ -13,7 +13,7 @@ function AchievementCard({ award, index }) {
       <div className="flex-grow p-6">
         <h3
           className="mb-3 text-center text-lg font-black"
-          style={{ color: 'rgb(13, 59, 134)' }}
+          style={{ color: 'rgb(194, 24, 53)' }}
         >
           {award.title}
         </h3>
@@ -33,8 +33,8 @@ export default function AwardsGrid() {
           <span
             className="mb-5 inline-flex items-center gap-2 rounded-full px-4 py-2 text-[11px] font-bold tracking-[0.15em] uppercase"
             style={{
-              background: 'rgb(238, 245, 255)',
-              color: 'rgb(13, 59, 134)',
+              background: 'rgb(253, 242, 243)',
+              color: 'rgb(194, 24, 53)',
             }}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-current" />

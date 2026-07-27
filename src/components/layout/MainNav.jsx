@@ -99,7 +99,7 @@ export default function MainNav({
   }
 
   const linkBase = scrolled
-    ? 'text-sm font-medium transition-colors px-3 py-3.5 border-b-2 border-transparent hover:border-amber-400 text-gray-700 hover:text-[#0d3b86]'
+    ? 'text-sm font-medium transition-colors px-3 py-3.5 border-b-2 border-transparent hover:border-amber-400 text-gray-700 hover:text-[#c21835]'
     : 'text-sm font-medium transition-colors px-3 py-3.5 border-b-2 border-transparent hover:border-amber-400 text-white/90 hover:text-white'
 
   const linkActive = scrolled
@@ -135,7 +135,7 @@ export default function MainNav({
                     />
                   </button>
                   <div
-                    className="absolute left-0 top-full z-50 hidden min-w-[240px] flex-col gap-2 rounded-xl border border-white/10 bg-[#091a4f]/95 p-2 shadow-lg group-hover:flex"
+                    className="absolute left-0 top-full z-50 hidden min-w-[240px] flex-col gap-2 rounded-xl border border-white/10 bg-[#9e0e21]/95 p-2 shadow-lg group-hover:flex"
                     role="menu"
                   >
                     {dropdown.items.map((sub) => (

@@ -7,7 +7,7 @@ export default function AwardsPageHero() {
       className="relative overflow-hidden pt-44 pb-24 md:pt-48 md:pb-28"
       style={{
         background:
-          'linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(240, 244, 255) 40%, rgb(232, 238, 255) 100%)',
+          'linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(253, 242, 243) 40%, rgb(255, 236, 239) 100%)',
       }}
     >
       <div
@@ -29,7 +29,7 @@ export default function AwardsPageHero() {
           </Link>
           <span className="flex items-center gap-1.5">
             <ChevronRightIcon size={14} />
-            <span className="font-medium" style={{ color: 'rgb(9, 26, 79)' }}>
+            <span className="font-medium" style={{ color: 'rgb(158, 14, 33)' }}>
               Awards & Achievements
             </span>
           </span>
@@ -39,7 +39,7 @@ export default function AwardsPageHero() {
           className="mb-3 text-4xl font-black tracking-tight md:text-5xl"
           style={{
             fontFamily: '"DM Sans", sans-serif',
-            color: 'rgb(9, 26, 79)',
+            color: 'rgb(158, 14, 33)',
           }}
         >
           Awards & Achievements

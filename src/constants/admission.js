@@ -5,7 +5,7 @@ export const ADMISSION_JOURNEY_STEPS = [
     description:
       'Share your details through our online form, call the Vasant Valley School admissions desk, or reach us on WhatsApp.',
     icon: 'clipboard',
-    color: 'rgb(13, 59, 134)',
+    color: 'rgb(194, 24, 53)',
   },
   {
     step: '02',
@@ -21,7 +21,7 @@ export const ADMISSION_JOURNEY_STEPS = [
     description:
       'Visit our Vasant Kunj campus, meet the team and experience Vasant Valley School first-hand.',
     icon: 'mapPin',
-    color: 'rgb(13, 59, 134)',
+    color: 'rgb(194, 24, 53)',
   },
   {
     step: '04',
@@ -37,6 +37,6 @@ export const ADMISSION_JOURNEY_STEPS = [
     description:
       'Complete the fee process, receive your Vasant Valley School admission confirmation and get full onboarding support.',
     icon: 'badgeCheck',
-    color: 'rgb(13, 59, 134)',
+    color: 'rgb(194, 24, 53)',
   },
 ]

@@ -35,7 +35,7 @@ function SectionTitle({ children }) {
   return (
     <h3
       className="mb-4 border-b border-gray-100 pb-2 text-lg font-black"
-      style={{ color: 'rgb(13, 59, 134)' }}
+      style={{ color: 'rgb(194, 24, 53)' }}
     >
       {children}
     </h3>
@@ -113,7 +113,7 @@ function CareersForm() {
       <div className="mb-12 text-center">
         <h2
           className="mb-3 text-3xl font-black"
-          style={{ color: 'rgb(13, 59, 134)' }}
+          style={{ color: 'rgb(194, 24, 53)' }}
         >
           Contact Us
         </h2>
@@ -138,7 +138,7 @@ function CareersForm() {
               {index > 0 ? ' , ' : ''}
               <a
                 href={phone.href}
-                className="transition-colors hover:text-[#0d3b86]"
+                className="transition-colors hover:text-[#c21835]"
               >
                 {phone.label}
               </a>
@@ -154,7 +154,7 @@ function CareersForm() {
       <div className="mb-10 rounded-2xl border border-gray-100 bg-gray-50 p-6 text-center">
         <h2
           className="mb-3 text-2xl font-black"
-          style={{ color: 'rgb(13, 59, 134)' }}
+          style={{ color: 'rgb(194, 24, 53)' }}
         >
           Guidelines
         </h2>
@@ -376,7 +376,7 @@ function CareersForm() {
                         <td key={field} className="px-2 py-2">
                           <input
                             type="text"
-                            className="w-full rounded-lg border-0 bg-transparent px-2 py-2 text-sm text-gray-700 outline-none focus:ring-1 focus:ring-blue-100"
+                            className="w-full rounded-lg border-0 bg-transparent px-2 py-2 text-sm text-gray-700 outline-none focus:ring-1 focus:ring-red-100"
                             value={row[field]}
                             onChange={(event) =>
                               handleEmploymentChange(
@@ -396,7 +396,7 @@ function CareersForm() {
             <div className="mt-3 flex justify-end gap-2">
               <button
                 type="button"
-                className="rounded-lg bg-[#091a4f] px-3 py-1.5 text-xs font-bold text-white"
+                className="rounded-lg bg-[#9e0e21] px-3 py-1.5 text-xs font-bold text-white"
                 onClick={() =>
                   setEmployment((rows) =>
                     rows.length < 5
@@ -454,7 +454,7 @@ function CareersForm() {
                         <td key={field} className="px-2 py-2">
                           <input
                             type="text"
-                            className="w-full rounded-lg border-0 bg-transparent px-2 py-2 text-sm text-gray-700 outline-none focus:ring-1 focus:ring-blue-100"
+                            className="w-full rounded-lg border-0 bg-transparent px-2 py-2 text-sm text-gray-700 outline-none focus:ring-1 focus:ring-red-100"
                             value={row[field]}
                             onChange={(event) =>
                               handleEducationChange(
@@ -474,7 +474,7 @@ function CareersForm() {
             <div className="mt-3 flex justify-end gap-2">
               <button
                 type="button"
-                className="rounded-lg bg-[#091a4f] px-3 py-1.5 text-xs font-bold text-white"
+                className="rounded-lg bg-[#9e0e21] px-3 py-1.5 text-xs font-bold text-white"
                 onClick={() =>
                   setEducation((rows) =>
                     rows.length < 5
@@ -522,7 +522,7 @@ function CareersForm() {
           <button
             type="submit"
             className="w-full rounded-xl py-3.5 text-sm font-bold text-white transition-all hover:opacity-90 sm:w-auto sm:px-10"
-            style={{ background: 'rgb(9, 26, 79)' }}
+            style={{ background: 'rgb(158, 14, 33)' }}
           >
             Submit Application
           </button>

@@ -4,7 +4,7 @@ import { BEYOND_IMAGES, BEYOND_TAGS } from '../../constants/beyondClassroom'
 
 const tagStyle = {
   background: 'rgb(248, 250, 252)',
-  color: 'rgb(9, 26, 79)',
+  color: 'rgb(158, 14, 33)',
   border: '1.5px solid rgb(226, 232, 240)',
   borderRadius: '9999px',
 }
@@ -25,7 +25,7 @@ export default function BeyondClassroom() {
             <h2 className="mb-5 text-4xl leading-tight font-extrabold tracking-tight text-gray-900 md:text-5xl">
               Beyond The
               <br />
-              <span style={{ color: 'rgb(9, 26, 79)' }}>Classroom</span>
+              <span style={{ color: 'rgb(158, 14, 33)' }}>Classroom</span>
             </h2>
 
             <p className="mb-3 text-[15px] leading-[1.8] text-gray-600">
@@ -56,7 +56,7 @@ export default function BeyondClassroom() {
               data-testid="button-beyond-classroom"
               className="group inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:opacity-90 hover:shadow-lg"
               style={{
-                background: 'rgb(9, 26, 79)',
+                background: 'rgb(158, 14, 33)',
                 borderRadius: '9999px',
               }}
             >
@@ -118,7 +118,7 @@ export default function BeyondClassroom() {
                 </p>
                 <p
                   className="text-xl font-extrabold"
-                  style={{ color: 'rgb(9, 26, 79)' }}
+                  style={{ color: 'rgb(158, 14, 33)' }}
                 >
                   25+
                 </p>

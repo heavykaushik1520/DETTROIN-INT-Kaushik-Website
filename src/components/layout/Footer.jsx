@@ -22,7 +22,7 @@ import { SITE_NAME } from '../../constants/seo'
 
 function FooterMenuLink({ href, children }) {
   const className =
-    'text-sm text-white/70 transition-colors duration-200 hover:text-white'
+    'text-sm text-white transition-colors duration-200 hover:text-amber-200'
 
   if (href.startsWith('http')) {
     return (
@@ -39,7 +39,7 @@ function FooterMenuLink({ href, children }) {
 
   if (href === '#') {
     return (
-      <span className="cursor-default text-sm text-white/70">{children}</span>
+      <span className="cursor-default text-sm text-white">{children}</span>
     )
   }
 
@@ -106,10 +106,7 @@ function CampusMap() {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="pointer-events-none h-full w-full border-0 object-cover transition-transform duration-700 group-hover:scale-105"
-            style={{ filter: 'brightness(0.9) saturate(1.05)' }}
           />
-
-          <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-[#091a4f]/60 via-transparent to-[#091a4f]/30" />
 
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
             <div className="relative flex flex-col items-center">
@@ -143,24 +140,24 @@ function CampusMap() {
           <div
             className="pointer-events-none absolute top-4 left-4 flex max-w-65 items-center gap-3 rounded-2xl px-4 py-3 shadow-xl backdrop-blur-sm"
             style={{
-              background: 'rgba(9, 26, 79, 0.85)',
-              border: '1px solid rgba(251, 191, 36, 0.35)',
+              background: 'rgba(255, 255, 255, 0.9)',
+              border: '1px solid rgba(158, 14, 33, 0.2)',
             }}
           >
             <div
               className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl"
               style={{
-                background: 'rgba(251, 191, 36, 0.15)',
-                border: '1px solid rgba(251, 191, 36, 0.3)',
+                background: 'rgba(158, 14, 33, 0.08)',
+                border: '1px solid rgba(158, 14, 33, 0.2)',
               }}
             >
-              <MapPinIcon size={18} className="text-amber-400" />
+              <MapPinIcon size={18} className="text-[#9e0e21]" />
             </div>
             <div>
-              <p className="text-xs leading-tight font-black text-white">
+              <p className="text-xs leading-tight font-black text-black">
                 {FOOTER_CAMPUS.name}
               </p>
-              <p className="mt-0.5 text-[10px] leading-tight text-white/50">
+              <p className="mt-0.5 text-[10px] leading-tight text-gray-600">
                 {FOOTER_CAMPUS.line1}
                 <br />
                 {FOOTER_CAMPUS.line2}
@@ -172,7 +169,7 @@ function CampusMap() {
             className="pointer-events-none absolute right-4 bottom-4 flex items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-bold shadow-lg transition-all group-hover:scale-105"
             style={{
               background: 'rgb(251, 191, 36)',
-              color: 'rgb(9, 26, 79)',
+              color: 'rgb(158, 14, 33)',
             }}
           >
             <NavigationIcon size={12} />
@@ -190,7 +187,7 @@ export default function Footer() {
       className="text-white"
       style={{
         background:
-          'linear-gradient(135deg, rgb(9, 26, 79) 0%, rgb(13, 59, 134) 100%)',
+          'linear-gradient(135deg, rgb(158, 14, 33) 0%, rgb(194, 24, 53) 100%)',
       }}
     >
       <CampusMap />
@@ -209,7 +206,7 @@ export default function Footer() {
               <li>
                 <a
                   href={CONTACT.phonePrimary.href}
-                  className="text-sm text-white/70 transition-colors hover:text-white"
+                  className="text-sm text-white transition-colors hover:text-amber-200"
                 >
                   {CONTACT.phonePrimary.label}
                 </a>
@@ -217,26 +214,16 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${FOOTER_EMAIL}`}
-                  className="text-sm text-white/70 transition-colors hover:text-white"
+                  className="text-sm text-white transition-colors hover:text-amber-200"
                 >
                   {FOOTER_EMAIL}
                 </a>
               </li>
-              <li className="text-sm leading-relaxed text-white/70">
+              <li className="text-sm leading-relaxed text-white">
                 {FOOTER_CAMPUS.line1}
                 <br />
                 {FOOTER_CAMPUS.line2}
               </li>
-              {/* <li>
-                <a
-                  href={FOOTER_MAP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-semibold text-white transition-colors hover:text-amber-300"
-                >
-                  SEE MAP
-                </a>
-              </li> */}
             </ul>
           </div>
         </div>

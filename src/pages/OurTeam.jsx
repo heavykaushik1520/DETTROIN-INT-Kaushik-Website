@@ -81,20 +81,20 @@ function TeamModal({ member, onClose }) {
       aria-label={`${member.name} bio`}
     >
       <div
-        className="absolute inset-0 bg-[#091a4f]/70 backdrop-blur-sm"
+        className="absolute inset-0 bg-[#9e0e21]/70 backdrop-blur-sm"
         onClick={onClose}
       />
 
       <div className="relative w-full max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-white shadow-2xl">
         <div className="grid grid-cols-1 md:grid-cols-5">
           <div className="md:col-span-2">
-            <div className="relative aspect-[4/3] w-full bg-[#091a4f]">
+            <div className="relative aspect-[4/3] w-full bg-[#9e0e21]">
               <img
                 src={member.img}
                 alt={member.name}
                 className="h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#091a4f]/70 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#9e0e21]/70 via-transparent to-transparent" />
             </div>
           </div>
 
@@ -102,7 +102,7 @@ function TeamModal({ member, onClose }) {
             <div className="mb-3 flex items-center gap-3">
               <div
                 className="flex h-12 w-12 items-center justify-center rounded-2xl font-black"
-                style={{ background: 'rgb(13, 59, 134)', color: 'white' }}
+                style={{ background: 'rgb(194, 24, 53)', color: 'white' }}
               >
                 {initials(member.name)}
               </div>
@@ -132,7 +132,7 @@ function TeamModal({ member, onClose }) {
               <button
                 type="button"
                 onClick={onClose}
-                className="rounded-xl bg-[#091a4f] px-5 py-2.5 text-sm font-bold text-white hover:opacity-90"
+                className="rounded-xl bg-[#9e0e21] px-5 py-2.5 text-sm font-bold text-white hover:opacity-90"
               >
                 Close
               </button>
@@ -173,13 +173,13 @@ export default function OurTeam() {
                 className="group h-full text-left"
               >
                 <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm transition-transform duration-300 group-hover:-translate-y-1">
-                  <div className="relative aspect-[4/3] w-full bg-[#091a4f]">
+                  <div className="relative aspect-[4/3] w-full bg-[#9e0e21]">
                     <img
                       src={member.img}
                       alt={member.name}
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#091a4f]/70 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#9e0e21]/70 via-transparent to-transparent" />
                   </div>
 
                   <div className="flex flex-1 flex-col p-5">
@@ -193,7 +193,7 @@ export default function OurTeam() {
                         </p>
                       </div>
                       <div
-                        className="flex h-10 w-10 items-center justify-center rounded-2xl border border-gray-200 bg-gray-50 text-[#091a4f]"
+                        className="flex h-10 w-10 items-center justify-center rounded-2xl border border-gray-200 bg-gray-50 text-[#9e0e21]"
                         aria-hidden="true"
                       >
                         +

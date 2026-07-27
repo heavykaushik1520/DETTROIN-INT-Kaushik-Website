@@ -80,7 +80,7 @@ export default function ProgrammesOffered() {
                 </div>
                 <h3
                   className="mb-3 text-lg font-black leading-snug"
-                  style={{ color: 'rgb(13, 59, 134)' }}
+                  style={{ color: 'rgb(194, 24, 53)' }}
                 >
                   {programme.title}
                 </h3>

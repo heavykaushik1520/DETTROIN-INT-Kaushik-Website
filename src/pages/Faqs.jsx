@@ -18,7 +18,7 @@ function FaqItem({ item, index, openIndex, setOpenIndex }) {
       >
         <h2
           className="text-base font-black leading-snug md:text-lg"
-          style={{ color: 'rgb(13, 59, 134)' }}
+          style={{ color: 'rgb(194, 24, 53)' }}
         >
           {item.question}
         </h2>
@@ -26,7 +26,7 @@ function FaqItem({ item, index, openIndex, setOpenIndex }) {
           className={`mt-1 shrink-0 transition-transform ${
             isOpen ? 'rotate-180' : ''
           }`}
-          style={{ color: 'rgb(13, 59, 134)' }}
+          style={{ color: 'rgb(194, 24, 53)' }}
         >
           <ChevronDownIcon size={18} />
         </span>

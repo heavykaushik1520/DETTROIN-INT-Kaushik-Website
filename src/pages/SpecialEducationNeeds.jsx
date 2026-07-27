@@ -45,7 +45,7 @@ export default function SpecialEducationNeeds() {
         breadcrumb="Special Education Needs"
       />
 
-      <section className="bg-[#eef5ff] py-16 md:py-20">
+      <section className="bg-[#fdf2f3] py-16 md:py-20">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm">
             <div className="relative min-h-90 md:min-h-110">
@@ -54,7 +54,7 @@ export default function SpecialEducationNeeds() {
                 alt="Vasant Valley School Special Education Needs facilities"
                 className="absolute inset-0 h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-[#091a4f]/95 via-[#091a4f]/45 to-[#091a4f]/15" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#9e0e21]/95 via-transparent to-[#9e0e21]/15" />
 
               <div className="relative z-10 flex min-h-90 flex-col justify-end p-6 md:min-h-110 md:p-10 lg:p-12">
                 <span className="mb-3 text-xs font-semibold tracking-[0.2em] text-amber-400 uppercase">
@@ -104,7 +104,7 @@ export default function SpecialEducationNeeds() {
             <div className="mt-2 mb-4 h-0.5 w-8 bg-amber-400" />
             <h2
               className="text-2xl font-black md:text-3xl"
-              style={{ color: 'rgb(13, 59, 134)' }}
+              style={{ color: 'rgb(194, 24, 53)' }}
             >
               Facilities in Action
             </h2>
@@ -123,7 +123,7 @@ export default function SpecialEducationNeeds() {
                     className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-[#091a4f]/70 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#9e0e21]/70 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 </div>
               </div>
             ))}

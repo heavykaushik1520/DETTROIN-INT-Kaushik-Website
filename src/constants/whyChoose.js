@@ -5,7 +5,7 @@ export const WHY_CHOOSE_BENEFITS = [
       'CBSE No. 1130661. Rigorous, board-recognised curriculum from Nursery through Class 12.',
     icon: 'graduation',
     iconBg: 'rgb(224, 237, 255)',
-    iconColor: 'rgb(13, 59, 134)',
+    iconColor: 'rgb(194, 24, 53)',
   },
   {
     title: 'Nursery to Class 12 Under One Roof',

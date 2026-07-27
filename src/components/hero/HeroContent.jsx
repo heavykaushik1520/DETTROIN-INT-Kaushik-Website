@@ -32,10 +32,10 @@ export default function HeroContent() {
         </span>
       </h1>
 
-      <p className="mb-2 text-base font-semibold text-blue-100 md:text-lg">
+      <p className="mb-2 text-base font-semibold text-red-100 md:text-lg">
         Admissions Open 2026-27 at Vasant Valley School.
       </p>
-      <p className="mb-8 max-w-lg text-sm leading-relaxed font-light text-blue-200/70 md:text-base">
+      <p className="mb-8 max-w-lg text-sm leading-relaxed font-light text-red-100/70 md:text-base">
         A CBSE-affiliated K-12 school with a 3.5-acre campus, strong academics,
         sports, safety, transport, and holistic learning.
       </p>
@@ -49,7 +49,7 @@ export default function HeroContent() {
             <div className="mb-1 text-sm leading-none font-extrabold text-amber-400">
               {stat.value}
             </div>
-            <div className="text-[10px] font-medium tracking-wide text-blue-200/60 uppercase">
+            <div className="text-[10px] font-medium tracking-wide text-red-100/60 uppercase">
               {stat.label}
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function HeroContent() {
         <a
           href="/admissions"
           data-testid="btn-hero-book-visit"
-          className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold text-[#091a4f] transition-all hover:scale-[1.02] hover:shadow-lg"
+          className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold text-[#9e0e21] transition-all hover:scale-[1.02] hover:shadow-lg"
           style={{ background: 'rgb(251, 191, 36)' }}
         >
           <CalendarCheckIcon size={16} />

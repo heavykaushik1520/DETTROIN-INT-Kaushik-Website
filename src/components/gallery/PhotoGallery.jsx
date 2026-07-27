@@ -16,9 +16,9 @@ function GalleryCard({ photo, index, onOpen }) {
         decoding="async"
         className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#091a4f]/90 via-[#091a4f]/25 to-transparent opacity-90 transition duration-500 group-hover:opacity-100" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#9e0e21]/90 via-transparent to-transparent opacity-90 transition duration-500 group-hover:opacity-100" />
       <div className="absolute inset-x-0 bottom-0 p-5">
-        <span className="mb-2 inline-block rounded-full bg-amber-400/95 px-2.5 py-1 text-[10px] font-bold tracking-wider text-[#091a4f] uppercase">
+        <span className="mb-2 inline-block rounded-full bg-amber-400/95 px-2.5 py-1 text-[10px] font-bold tracking-wider text-[#9e0e21] uppercase">
           {photo.category}
         </span>
         <h3 className="text-lg leading-tight font-extrabold text-white">
@@ -69,7 +69,7 @@ export default function PhotoGallery() {
     <section className="relative overflow-hidden bg-[#f8fafc] py-16 md:py-20">
       <div
         className="pointer-events-none absolute bottom-0 -left-20 h-80 w-80 rounded-full opacity-30 blur-3xl"
-        style={{ background: 'rgb(13, 59, 134)' }}
+        style={{ background: 'rgb(194, 24, 53)' }}
         aria-hidden="true"
       />
 
@@ -103,8 +103,8 @@ export default function PhotoGallery() {
                 }}
                 className={`rounded-full px-4 py-2 text-xs font-bold tracking-wide uppercase transition-all ${
                   isActive
-                    ? 'bg-[#091a4f] text-white shadow-md'
-                    : 'border border-gray-200 bg-white text-gray-600 hover:border-amber-300 hover:text-[#091a4f]'
+                    ? 'bg-[#9e0e21] text-white shadow-md'
+                    : 'border border-gray-200 bg-white text-gray-600 hover:border-amber-300 hover:text-[#9e0e21]'
                 }`}
               >
                 {item.label}

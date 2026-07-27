@@ -3,7 +3,7 @@ function SectionHeading({ letter, title }) {
     <div className="mb-6 flex items-center gap-3">
       <div
         className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl text-sm font-black text-white"
-        style={{ background: 'rgb(13, 59, 134)' }}
+        style={{ background: 'rgb(194, 24, 53)' }}
       >
         {letter}
       </div>

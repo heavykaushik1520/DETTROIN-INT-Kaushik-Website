@@ -8,9 +8,9 @@ import {
 import { ADMISSION_JOURNEY_STEPS } from '../../constants/admission'
 
 const connectorGradient =
-  'linear-gradient(to right, rgb(13, 59, 134), rgb(245, 158, 11))'
+  'linear-gradient(to right, rgb(194, 24, 53), rgb(245, 158, 11))'
 const connectorGradientVertical =
-  'linear-gradient(rgb(13, 59, 134), rgb(245, 158, 11))'
+  'linear-gradient(rgb(194, 24, 53), rgb(245, 158, 11))'
 
 function StepIcon({ name, className, size }) {
   switch (name) {

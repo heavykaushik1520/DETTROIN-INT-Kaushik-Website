@@ -10,7 +10,7 @@ import { CONTACT, WHATSAPP_HREF } from '../../constants/contact'
 import { FOOTER_EMAIL } from '../../constants/footer'
 
 const inputClassName =
-  'w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-400 transition-all bg-white'
+  'w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-100 focus:border-red-400 transition-all bg-white'
 
 const initialForm = {
   name: '',
@@ -87,13 +87,13 @@ export default function ContactSection() {
             <ContactCard icon={<PhoneIcon size={18} />} title="Call Us">
               <a
                 href={CONTACT.phonePrimary.href}
-                className="block transition-colors hover:text-[#0d3b86]"
+                className="block transition-colors hover:text-[#c21835]"
               >
                 {CONTACT.phonePrimary.label}
               </a>
               <a
                 href={CONTACT.phoneSecondary.href}
-                className="block transition-colors hover:text-[#0d3b86]"
+                className="block transition-colors hover:text-[#c21835]"
               >
                 {CONTACT.phoneSecondary.label}
               </a>
@@ -102,7 +102,7 @@ export default function ContactSection() {
             <ContactCard icon={<MailIcon size={18} />} title="Email Us">
               <a
                 href={`mailto:${FOOTER_EMAIL}`}
-                className="break-all transition-colors hover:text-[#0d3b86]"
+                className="break-all transition-colors hover:text-[#c21835]"
               >
                 {FOOTER_EMAIL}
               </a>
@@ -240,7 +240,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   className="w-full rounded-xl py-3.5 text-sm font-bold text-white transition-all hover:opacity-90 hover:shadow-lg sm:w-auto sm:px-10"
-                  style={{ background: 'rgb(9, 26, 79)' }}
+                  style={{ background: 'rgb(158, 14, 33)' }}
                 >
                   Send Message
                 </button>

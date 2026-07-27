@@ -20,10 +20,10 @@ function DiscoverCard({ card, index }) {
           src={card.image}
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#091a4f]/90 via-[#091a4f]/30 to-transparent transition-all duration-500 group-hover:from-amber-600/85 group-hover:via-amber-600/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#9e0e21]/90 via-[#9e0e21]/30 to-transparent transition-all duration-500 group-hover:from-amber-600/85 group-hover:via-amber-600/20" />
 
         <div className="absolute top-4 left-4">
-          <span className="rounded-full bg-amber-400 px-3 py-1.5 text-xs font-bold text-[#091a4f]">
+          <span className="rounded-full bg-amber-400 px-3 py-1.5 text-xs font-bold text-[#9e0e21]">
             {card.badge}
           </span>
         </div>

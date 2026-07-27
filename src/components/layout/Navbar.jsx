@@ -18,7 +18,7 @@ function ContactDetails({ compact = false, scrolled = false }) {
     ? 'mt-0.5 shrink-0 text-amber-500 transition-colors'
     : 'mt-0.5 shrink-0 text-amber-300 transition-colors'
   const phonePrimary = scrolled
-    ? 'block text-sm font-semibold text-gray-900 transition-colors hover:text-[#0d3b86]'
+    ? 'block text-sm font-semibold text-gray-900 transition-colors hover:text-[#c21835]'
     : 'block text-sm font-semibold text-white transition-colors hover:text-amber-200'
   const phoneSecondary = scrolled
     ? 'block text-xs text-gray-500 transition-colors hover:text-gray-800'
@@ -101,7 +101,7 @@ export default function Navbar({ menuOpen, setMenuOpen, scrolled = false }) {
             <a
               href={CONTACT.phonePrimary.href}
               data-testid="link-navbar-call-mobile"
-              className="flex items-center gap-1.5 rounded-full bg-amber-400 px-3 py-2 text-[10px] font-bold text-[#091a4f] transition-all"
+              className="flex items-center gap-1.5 rounded-full bg-amber-400 px-3 py-2 text-[10px] font-bold text-[#9e0e21] transition-all"
               aria-label="Call to book a visit"
             >
               <PhoneIcon size={14} />
@@ -136,20 +136,14 @@ export default function Navbar({ menuOpen, setMenuOpen, scrolled = false }) {
       </div>
 
       {menuOpen && (
-        <div
-          className={`border-b px-4 py-4 backdrop-blur-sm lg:hidden ${
-            scrolled
-              ? 'border-gray-200 bg-white text-gray-900'
-              : 'border-white/10 bg-[#091a4f]/95 text-white'
-          }`}
-        >
+        <div className="border-b border-gray-200 bg-white/95 px-4 py-4 text-gray-900 backdrop-blur-md lg:hidden">
           <div className="container mx-auto flex max-w-lg flex-col gap-5">
             <div className="flex flex-col gap-4">
-              <ContactDetails compact scrolled={scrolled} />
+              <ContactDetails compact scrolled />
             </div>
             <MainNav
               mobile
-              scrolled={scrolled}
+              scrolled
               onNavigate={() => setMenuOpen(false)}
             />
           </div>

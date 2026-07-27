@@ -35,4 +35,4 @@ export const GRADE_OPTIONS = [
 ]
 
 export const inputClassName =
-  'w-full border rounded-xl px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-400 transition-all bg-white border-gray-200'
+  'w-full border rounded-xl px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-100 focus:border-red-400 transition-all bg-white border-gray-200'

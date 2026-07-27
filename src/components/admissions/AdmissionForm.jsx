@@ -165,7 +165,7 @@ export default function AdmissionForm() {
             <button
               type="submit"
               className="flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-bold text-white transition-all hover:opacity-90 hover:shadow-lg"
-              style={{ background: 'rgb(9, 26, 79)' }}
+              style={{ background: 'rgb(158, 14, 33)' }}
             >
               <CalendarCheckIcon size={16} />
               Submit Enquiry

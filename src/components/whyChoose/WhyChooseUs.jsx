@@ -75,7 +75,7 @@ export default function WhyChooseUs() {
           </div>
           <h2 className="mb-3 text-3xl leading-tight font-extrabold tracking-tight text-gray-900 md:text-4xl">
             Why Parents Trust{' '}
-            <span style={{ color: 'rgb(9, 26, 79)' }}>
+            <span style={{ color: 'rgb(158, 14, 33)' }}>
               Vasant Valley School
             </span>
           </h2>
@@ -103,7 +103,7 @@ export default function WhyChooseUs() {
                 className="rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm transition-all hover:border-amber-200 hover:shadow-md"
                 style={{ transition: 'opacity 0.5s, transform 0.5s' }}
               >
-                <div className="mb-1 text-2xl leading-none font-extrabold text-[#091a4f]">
+                <div className="mb-1 text-2xl leading-none font-extrabold text-[#9e0e21]">
                   {stat.value}
                 </div>
                 <div className="text-xs leading-snug font-medium text-gray-500">
@@ -117,7 +117,7 @@ export default function WhyChooseUs() {
             <Link
               to="/admissions"
               data-testid="btn-about-book-visit"
-              className="group inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-bold text-[#091a4f] transition-all duration-300 hover:opacity-90 hover:shadow-lg"
+              className="group inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-bold text-[#9e0e21] transition-all duration-300 hover:opacity-90 hover:shadow-lg"
               style={{
                 background: 'rgb(251, 191, 36)',
                 borderRadius: '9999px',
@@ -131,7 +131,7 @@ export default function WhyChooseUs() {
               data-testid="btn-about-learn-more"
               className="group inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:opacity-90 hover:shadow-lg"
               style={{
-                background: 'rgb(9, 26, 79)',
+                background: 'rgb(158, 14, 33)',
                 borderRadius: '9999px',
               }}
             >

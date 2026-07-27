@@ -43,7 +43,7 @@ export default function AboutVvs() {
             <div>
               <h2
                 className="mb-4 text-2xl font-black"
-                style={{ color: 'rgb(13, 59, 134)' }}
+                style={{ color: 'rgb(194, 24, 53)' }}
               >
                 A few achievements this year
               </h2>
@@ -85,7 +85,7 @@ export default function AboutVvs() {
             <div className="pt-4">
               <h2
                 className="mb-3 text-2xl font-black"
-                style={{ color: 'rgb(13, 59, 134)' }}
+                style={{ color: 'rgb(194, 24, 53)' }}
               >
                 Values
               </h2>
@@ -103,14 +103,14 @@ export default function AboutVvs() {
                       className="mb-3 flex h-10 w-10 items-center justify-center rounded-full text-sm font-black"
                       style={{
                         background: 'rgb(254, 243, 199)',
-                        color: 'rgb(13, 59, 134)',
+                        color: 'rgb(194, 24, 53)',
                       }}
                     >
                       {value.charAt(0)}
                     </div>
                     <h3
                       className="text-base font-black"
-                      style={{ color: 'rgb(13, 59, 134)' }}
+                      style={{ color: 'rgb(194, 24, 53)' }}
                     >
                       {value}
                     </h3>

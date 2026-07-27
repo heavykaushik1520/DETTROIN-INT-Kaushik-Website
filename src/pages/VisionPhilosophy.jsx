@@ -66,7 +66,7 @@ export default function VisionPhilosophy() {
           <div className="mb-16 grid gap-8 md:grid-cols-2">
             <div
               className="rounded-3xl p-8 text-white shadow-sm"
-              style={{ background: 'rgb(13, 59, 134)' }}
+              style={{ background: 'rgb(194, 24, 53)' }}
             >
               <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-white/20">
                 <BadgeCheckIcon size={28} className="text-amber-400" />
@@ -82,7 +82,7 @@ export default function VisionPhilosophy() {
 
             <div
               className="rounded-3xl p-8 text-white shadow-sm"
-              style={{ background: 'rgb(13, 59, 134)' }}
+              style={{ background: 'rgb(194, 24, 53)' }}
             >
               <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-white/20">
                 <ClipboardListIcon size={28} className="text-amber-400" />
@@ -102,7 +102,7 @@ export default function VisionPhilosophy() {
 
           <h2
             className="mb-10 text-center text-3xl font-black"
-            style={{ color: 'rgb(13, 59, 134)' }}
+            style={{ color: 'rgb(194, 24, 53)' }}
           >
             Our Core Values
           </h2>
@@ -120,14 +120,14 @@ export default function VisionPhilosophy() {
                     className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full"
                     style={{
                       background: 'rgb(254, 243, 199)',
-                      color: 'rgb(13, 59, 134)',
+                      color: 'rgb(194, 24, 53)',
                     }}
                   >
                     <Icon size={22} />
                   </div>
                   <h3
                     className="mb-2 text-lg font-black"
-                    style={{ color: 'rgb(13, 59, 134)' }}
+                    style={{ color: 'rgb(194, 24, 53)' }}
                   >
                     {value.title}
                   </h3>

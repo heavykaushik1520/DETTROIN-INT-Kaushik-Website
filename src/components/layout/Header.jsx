@@ -32,16 +32,18 @@ export default function Header() {
     >
       <AdmissionsBanner />
       <div
-        className={`transition-all duration-300 ${
-          scrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        className={`border-b border-white/40 backdrop-blur-md transition-all duration-300 ${
+          scrolled
+            ? 'bg-white/90 shadow-md'
+            : 'bg-white/70 shadow-sm'
         }`}
       >
         <Navbar
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
-          scrolled={scrolled}
+          scrolled
         />
-        <MainNav scrolled={scrolled} />
+        <MainNav scrolled />
       </div>
     </header>
   )

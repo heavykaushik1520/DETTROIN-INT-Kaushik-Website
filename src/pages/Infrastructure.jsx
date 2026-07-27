@@ -30,7 +30,7 @@ export default function Infrastructure() {
     <main>
       <PageHero title="Infrastructure" breadcrumb="Infrastructure" />
 
-      <section className="bg-[#eef5ff] py-16 md:py-20">
+      <section className="bg-[#fdf2f3] py-16 md:py-20">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm">
             <div className="relative min-h-[360px] md:min-h-[440px]">
@@ -39,7 +39,7 @@ export default function Infrastructure() {
                 alt="Vasant Valley School campus"
                 className="absolute inset-0 h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#091a4f]/95 via-[#091a4f]/45 to-[#091a4f]/15" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#9e0e21]/95 via-transparent to-[#9e0e21]/15" />
 
               <div className="relative z-10 flex min-h-[360px] flex-col justify-end p-6 md:min-h-[440px] md:p-10 lg:p-12">
                 <span className="mb-3 text-xs font-semibold tracking-[0.2em] text-amber-400 uppercase">
@@ -64,7 +64,7 @@ export default function Infrastructure() {
               {CAMPUS_HIGHLIGHTS.map((item) => (
                 <span
                   key={item}
-                  className="rounded-full border border-amber-100 bg-[#eef5ff] px-3.5 py-1.5 text-xs font-semibold text-[#0d3b86] md:text-sm"
+                  className="rounded-full border border-amber-100 bg-[#fdf2f3] px-3.5 py-1.5 text-xs font-semibold text-[#c21835] md:text-sm"
                 >
                   {item}
                 </span>
@@ -84,7 +84,7 @@ export default function Infrastructure() {
               <div className="mt-2 mb-5 h-0.5 w-8 bg-amber-400" />
               <h2
                 className="mb-4 text-2xl font-black md:text-3xl"
-                style={{ color: 'rgb(13, 59, 134)' }}
+                style={{ color: 'rgb(194, 24, 53)' }}
               >
                 Learning Spaces
               </h2>
@@ -101,7 +101,7 @@ export default function Infrastructure() {
                 {LEARNING_FEATURES.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-start gap-2.5 rounded-2xl border border-gray-100 bg-[#eef5ff]/60 px-3.5 py-3"
+                    className="flex items-start gap-2.5 rounded-2xl border border-gray-100 bg-[#fdf2f3]/60 px-3.5 py-3"
                   >
                     <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-amber-400" />
                     <span className="text-sm font-medium text-gray-700">
@@ -118,9 +118,9 @@ export default function Infrastructure() {
                 alt="Vasant Valley School entrance and learning spaces"
                 className="h-full min-h-[360px] w-full object-cover transition duration-500 group-hover:scale-[1.03] lg:min-h-full"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#091a4f]/70 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#9e0e21]/70 via-transparent to-transparent" />
               <div className="absolute right-0 bottom-0 left-0 p-6 md:p-8">
-                <span className="inline-block rounded-full bg-amber-400 px-3 py-1.5 text-[10px] font-bold tracking-wider text-[#091a4f] uppercase">
+                <span className="inline-block rounded-full bg-amber-400 px-3 py-1.5 text-[10px] font-bold tracking-wider text-[#9e0e21] uppercase">
                   Campus View
                 </span>
               </div>
@@ -129,7 +129,7 @@ export default function Infrastructure() {
         </div>
       </section>
 
-      <section className="bg-[#eef5ff] py-16 md:py-20">
+      <section className="bg-[#fdf2f3] py-16 md:py-20">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="mb-10 max-w-2xl">
             <span className="text-xs font-semibold tracking-[0.2em] text-amber-500 uppercase">
@@ -138,7 +138,7 @@ export default function Infrastructure() {
             <div className="mt-2 mb-4 h-0.5 w-8 bg-amber-400" />
             <h2
               className="text-2xl font-black md:text-3xl"
-              style={{ color: 'rgb(13, 59, 134)' }}
+              style={{ color: 'rgb(194, 24, 53)' }}
             >
               Health, Safety & Transport
             </h2>
@@ -150,14 +150,14 @@ export default function Infrastructure() {
                 className="mb-5 inline-flex rounded-full px-3 py-1.5 text-[10px] font-bold tracking-wider uppercase"
                 style={{
                   background: 'rgb(254, 243, 199)',
-                  color: 'rgb(13, 59, 134)',
+                  color: 'rgb(194, 24, 53)',
                 }}
               >
                 Priority One
               </div>
               <h3
                 className="mb-5 text-xl font-black md:text-2xl"
-                style={{ color: 'rgb(13, 59, 134)' }}
+                style={{ color: 'rgb(194, 24, 53)' }}
               >
                 Health & Safety
               </h3>
@@ -198,9 +198,9 @@ export default function Infrastructure() {
 
             <div
               className="flex flex-col rounded-3xl p-7 text-white shadow-sm md:p-9"
-              style={{ background: 'rgb(13, 59, 134)' }}
+              style={{ background: 'rgb(194, 24, 53)' }}
             >
-              <div className="mb-5 inline-flex self-start rounded-full bg-amber-400 px-3 py-1.5 text-[10px] font-bold tracking-wider text-[#091a4f] uppercase">
+              <div className="mb-5 inline-flex self-start rounded-full bg-amber-400 px-3 py-1.5 text-[10px] font-bold tracking-wider text-[#9e0e21] uppercase">
                 Getting Here
               </div>
               <h3 className="mb-5 text-xl font-black md:text-2xl">Transport</h3>

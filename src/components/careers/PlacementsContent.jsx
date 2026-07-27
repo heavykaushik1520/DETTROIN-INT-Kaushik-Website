@@ -15,7 +15,7 @@ function PlacementTable({ batch }) {
         className="px-5 py-4 text-center"
         style={{
           background:
-            'linear-gradient(135deg, rgb(9, 26, 79) 0%, rgb(13, 59, 134) 100%)',
+            'linear-gradient(135deg, rgb(158, 14, 33) 0%, rgb(194, 24, 53) 100%)',
         }}
       >
         <h3 className="text-lg font-black text-white md:text-xl">
@@ -29,11 +29,11 @@ function PlacementTable({ batch }) {
       <div className="overflow-x-auto">
         <table className="min-w-full w-full border-collapse text-left text-sm">
           <thead>
-            <tr className="bg-[#eef5ff]">
+            <tr className="bg-[#fdf2f3]">
               {batch.columns.map((col) => (
                 <th
                   key={col.name}
-                  className="min-w-40 border-b border-gray-200 px-4 py-3 text-xs font-bold tracking-wide text-[#0d3b86] uppercase"
+                  className="min-w-40 border-b border-gray-200 px-4 py-3 text-xs font-bold tracking-wide text-[#c21835] uppercase"
                 >
                   {col.name}
                 </th>
@@ -86,7 +86,7 @@ export default function PlacementsContent() {
         <div className="mx-auto mt-2 mb-4 h-0.5 w-8 bg-amber-400" />
         <h2
           className="text-3xl font-black md:text-4xl"
-          style={{ color: 'rgb(13, 59, 134)' }}
+          style={{ color: 'rgb(194, 24, 53)' }}
         >
           College Placements
         </h2>
