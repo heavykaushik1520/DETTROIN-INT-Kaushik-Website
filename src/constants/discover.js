@@ -7,7 +7,7 @@ export const DISCOVER_CARDS = [
   {
     title: 'Awards & Accomplishments',
     description:
-      'Accolades earned for being one of the best and most promising international schools in Thane for over a decade.',
+      'Accolades earned by one of the most respected schools in New Delhi over the years.',
     badge: 'Recognition',
     href: '/awards-achievements',
     image: awardsImg,
@@ -37,3 +37,4 @@ export const DISCOVER_CARDS = [
     image: safetySecurityImg,
   },
 ]
+

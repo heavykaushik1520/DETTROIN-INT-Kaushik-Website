@@ -1,7 +1,7 @@
-export const SITE_NAME = 'Horizon International School'
+export const SITE_NAME = 'Vasant Valley School'
 
 export const PAGE_TITLES = {
-  home: `Best CBSE School in Thane | ${SITE_NAME}`,
+  home: `Best School in New Delhi | ${SITE_NAME}`,
   about: `About Us | ${SITE_NAME}`,
   awards: `Awards & Achievements | ${SITE_NAME}`,
   contact: `Connect With Us | ${SITE_NAME}`,

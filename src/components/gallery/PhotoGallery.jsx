@@ -87,7 +87,7 @@ export default function PhotoGallery() {
             <div className="mx-auto mt-2 h-0.5 w-8 bg-amber-400" />
           </div>
           <h2 className="mb-3 text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
-            A glimpse into life at Horizon
+            A glimpse into life at Vasant Valley
           </h2>
           <p className="text-base text-gray-500">
             Sports, labs, libraries and everyday moments — explore our campus
@@ -148,3 +148,4 @@ export default function PhotoGallery() {
     </section>
   )
 }
+

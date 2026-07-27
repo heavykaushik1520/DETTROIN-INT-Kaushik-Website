@@ -1,11 +1,14 @@
 export const ACADEMICS_GENERAL = [
-  { label: 'Name of the School', value: 'Horizon International School' },
-  { label: 'Affiliation Number (if applicable)', value: 'â€”' },
-  { label: 'School Code (if applicable)', value: 'â€”' },
-  { label: 'Complete Address with PIN Code', value: 'â€”' },
-  { label: 'Principal Name & Qualification', value: 'â€”' },
-  { label: 'Email ID', value: 'â€”' },
-  { label: 'Contact Details', value: 'â€”' },
+  { label: 'Name of the School', value: 'Vasant Valley School' },
+  { label: 'Affiliation Number (if applicable)', value: '—' },
+  { label: 'School Code (if applicable)', value: '—' },
+  {
+    label: 'Complete Address with PIN Code',
+    value: 'Vasant Kunj Rd, Pocket 7, Sector C, Vasant Kunj, New Delhi, Delhi 110070',
+  },
+  { label: 'Principal Name & Qualification', value: '—' },
+  { label: 'Email ID', value: 'info@vasantvalley.edu.in' },
+  { label: 'Contact Details', value: '+91 11 41767940' },
 ]
 
 export const ACADEMICS_DOCUMENTS = [
@@ -28,41 +31,39 @@ export const ACADEMICS_ACADEMIC_DOCS = [
 ]
 
 export const ACADEMICS_STAFF = [
-  { label: 'Principal', value: 'â€”' },
-  { label: 'Total Number of Teachers', value: 'â€”' },
-  { label: 'A. PGT', value: 'â€”' },
-  { label: 'B. TGT', value: 'â€”' },
-  { label: 'C. PRT', value: 'â€”' },
-  { label: 'D. Other', value: 'â€”' },
-  { label: 'Teachers Section Ratio', value: 'â€”' },
-  { label: 'Details of Special Education', value: 'â€”' },
-  { label: 'Details of Counsellor and Wellness Teacher', value: 'â€”' },
+  { label: 'Principal', value: '—' },
+  { label: 'Total Number of Teachers', value: '—' },
+  { label: 'A. PGT', value: '—' },
+  { label: 'B. TGT', value: '—' },
+  { label: 'C. PRT', value: '—' },
+  { label: 'D. Other', value: '—' },
+  { label: 'Teachers Section Ratio', value: '—' },
+  { label: 'Details of Special Education', value: '—' },
+  { label: 'Details of Counsellor and Wellness Teacher', value: '—' },
 ]
 
 export const ACADEMICS_INFRASTRUCTURE = [
   {
     label: 'Total Campus Area of the School (in square metres)',
-    value: 'â€”',
+    value: '—',
   },
   {
     label: 'No. and Size of the Classrooms in sq. mtr',
-    value: 'â€”',
+    value: '—',
   },
   {
     label:
       'No. and Size of the Laboratories including the Computer Lab in sq. mtr',
-    value: 'â€”',
+    value: '—',
   },
-  { label: 'Internet Facility (Y/N)', value: 'â€”' },
-  { label: 'No. of Girls Toilet', value: 'â€”' },
-  { label: 'No. of Boys Toilet', value: 'â€”' },
+  { label: 'Internet Facility (Y/N)', value: '—' },
+  { label: 'No. of Girls Toilet', value: '—' },
+  { label: 'No. of Boys Toilet', value: '—' },
   {
     label:
       'Link of YouTube Video of Inspection of School covering the Infrastructure',
-    value: 'â€”',
+    value: '—',
   },
 ]
 
-export const ACADEMICS_MANDATORY = [
-  'Mandatory Public Disclosure (Appendix â€“ IX)',
-]
+export const ACADEMICS_MANDATORY = ['Mandatory Public Disclosure (Appendix – IX)']

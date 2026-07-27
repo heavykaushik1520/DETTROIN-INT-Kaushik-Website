@@ -76,7 +76,7 @@ export default function WhyChooseUs() {
           <h2 className="mb-3 text-3xl leading-tight font-extrabold tracking-tight text-gray-900 md:text-4xl">
             Why Parents Trust{' '}
             <span style={{ color: 'rgb(9, 26, 79)' }}>
-              Horizon International School
+              Vasant Valley School
             </span>
           </h2>
           <p className="mx-auto max-w-xl text-base text-gray-500">
@@ -113,7 +113,7 @@ export default function WhyChooseUs() {
             ))}
           </div>
 
-          <div className="flex flex-shrink-0 flex-col gap-3 sm:flex-row">
+          <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
             <Link
               to="/admissions"
               data-testid="btn-about-book-visit"
@@ -143,3 +143,7 @@ export default function WhyChooseUs() {
     </section>
   )
 }
+
+
+
+

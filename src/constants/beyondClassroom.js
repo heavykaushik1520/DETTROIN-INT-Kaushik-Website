@@ -14,7 +14,7 @@ export const BEYOND_TAGS = [
 export const BEYOND_IMAGES = {
   main: {
     src: rocketImg,
-    alt: 'Beyond The Classroom at Horizon International School — Tours, Exhibitions, Clubs, Promoting Green, Dignity of Labour',
+    alt: 'Beyond The Classroom at Vasant Valley School — Tours, Exhibitions, Clubs, Promoting Green, Dignity of Labour',
   },
   topRight: {
     src: prePrimaryImg,
@@ -25,3 +25,6 @@ export const BEYOND_IMAGES = {
     alt: 'Campus amenities',
   },
 }
+
+
+

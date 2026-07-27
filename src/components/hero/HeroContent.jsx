@@ -25,7 +25,7 @@ export default function HeroContent() {
       <h1 className="mb-4 text-4xl leading-[1.08] font-extrabold tracking-tight text-white md:text-5xl xl:text-6xl">
         Best CBSE School
         <br />
-        <span className="text-amber-400">in Mumbai</span>
+        <span className="text-amber-400">in New Delhi</span>
         <br />
         <span className="text-3xl md:text-4xl xl:text-5xl">
           Nursery to Class 12
@@ -33,7 +33,7 @@ export default function HeroContent() {
       </h1>
 
       <p className="mb-2 text-base font-semibold text-blue-100 md:text-lg">
-        Admissions Open 2026–27 at Horizon International School.
+        Admissions Open 2026–27 at Vasant Valley School.
       </p>
       <p className="mb-8 max-w-lg text-sm leading-relaxed font-light text-blue-200/70 md:text-base">
         A CBSE-affiliated K–12 school with a 3.5-acre campus, strong academics,
@@ -91,3 +91,6 @@ export default function HeroContent() {
     </div>
   )
 }
+
+
+

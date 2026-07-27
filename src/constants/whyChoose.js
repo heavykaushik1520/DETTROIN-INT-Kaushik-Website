@@ -42,7 +42,7 @@ export const WHY_CHOOSE_BENEFITS = [
   {
     title: 'Transport & Parent Communication',
     description:
-      'GPS-tracked buses on 30+ Thane routes. Regular PTMs, digital updates and counsellor support.',
+      'Transport support, regular PTMs, digital updates and counsellor support for families across New Delhi.',
     icon: 'bus',
     iconBg: 'rgb(224, 240, 255)',
     iconColor: 'rgb(8, 145, 178)',
@@ -55,3 +55,4 @@ export const WHY_CHOOSE_STATS = [
   { value: '3.5 Acres', label: 'Campus' },
   { value: 'CBSE', label: 'Affiliation #1130661' },
 ]
+
