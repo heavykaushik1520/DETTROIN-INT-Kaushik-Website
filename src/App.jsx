@@ -5,8 +5,10 @@ import AwardsAchievements from './pages/AwardsAchievements'
 import ContactUs from './pages/ContactUs'
 import Gallery from './pages/Gallery'
 import AboutUs from './pages/AboutUs'
+import AboutVvs from './pages/AboutVvs'
 import VisionPhilosophy from './pages/VisionPhilosophy'
 import CenterOfExcellence from './pages/CenterOfExcellence'
+import ProgrammesOffered from './pages/ProgrammesOffered'
 import OurTeam from './pages/OurTeam'
 import Academics from './pages/Academics'
 import Admissions from './pages/Admissions'
@@ -18,8 +20,10 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/about-vvs" element={<AboutVvs />} />
           <Route path="/vision-philosophy" element={<VisionPhilosophy />} />
           <Route path="/center-of-excellence" element={<CenterOfExcellence />} />
+          <Route path="/programmes-offered" element={<ProgrammesOffered />} />
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/academics" element={<Academics />} />
           <Route path="/admissions" element={<Admissions />} />

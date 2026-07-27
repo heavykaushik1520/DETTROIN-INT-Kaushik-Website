@@ -9,14 +9,12 @@ import {
 } from '../icons'
 import { CONTACT } from '../../constants/contact'
 import {
+  FOOTER_ABOUT_LINKS,
   FOOTER_CAMPUS,
-  FOOTER_COLUMN_FOUR,
-  FOOTER_COLUMN_ONE,
-  FOOTER_COLUMN_THREE,
-  FOOTER_COLUMN_TWO,
   FOOTER_EMAIL,
   FOOTER_MAP_EMBED_URL,
   FOOTER_MAP_URL,
+  FOOTER_QUICK_LINKS,
   FOOTER_SOCIAL,
 } from '../../constants/footer'
 import { SITE_NAME } from '../../constants/seo'
@@ -51,15 +49,22 @@ function FooterMenuLink({ href, children }) {
   )
 }
 
-function FooterMenuList({ items }) {
+function FooterMenuList({ items, title }) {
   return (
-    <ul className="space-y-3">
-      {items.map((item) => (
-        <li key={item.label}>
-          <FooterMenuLink href={item.href}>{item.label}</FooterMenuLink>
-        </li>
-      ))}
-    </ul>
+    <div>
+      {title && (
+        <h3 className="mb-4 text-sm font-black tracking-wide text-white uppercase">
+          {title}
+        </h3>
+      )}
+      <ul className="space-y-3">
+        {items.map((item) => (
+          <li key={item.label}>
+            <FooterMenuLink href={item.href}>{item.label}</FooterMenuLink>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 
@@ -115,10 +120,7 @@ function CampusMap() {
                     'rgba(255, 255, 255, 0.9) 0px 0px 0px 4px, rgba(249, 115, 22, 0.5) 0px 0px 30px, rgba(0, 0, 0, 0.4) 0px 8px 24px',
                 }}
               >
-                <MapPinIcon
-                  size={26}
-                  className="text-white drop-shadow-lg"
-                />
+                <MapPinIcon size={26} className="text-white drop-shadow-lg" />
               </div>
               <div
                 className="relative z-0 -mt-1 h-6 w-1"
@@ -193,26 +195,15 @@ export default function Footer() {
       <CampusMap />
 
       <div className="container mx-auto px-4 py-14">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
-          <div className="space-y-8">
-            <FooterMenuList items={FOOTER_COLUMN_ONE} />
-            <FooterMenuList items={FOOTER_COLUMN_TWO} />
-          </div>
-
-          <div className="hidden lg:block" aria-hidden="true" />
-
-          <div className="space-y-8">
-            <FooterMenuList items={FOOTER_COLUMN_THREE} />
-            <FooterMenuList items={FOOTER_COLUMN_FOUR} />
-          </div>
-
-          <div className="hidden lg:block" aria-hidden="true" />
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <FooterMenuList items={FOOTER_QUICK_LINKS} title="Quick Links" />
+          <FooterMenuList items={FOOTER_ABOUT_LINKS} title="About Us" />
 
           <div>
+            <h3 className="mb-4 text-sm font-black tracking-wide text-white uppercase">
+              Contact Us
+            </h3>
             <ul className="space-y-3">
-              <li>
-                <span className="text-sm text-white/70">Contact Us:</span>
-              </li>
               <li>
                 <a
                   href={CONTACT.phonePrimary.href}
@@ -229,17 +220,17 @@ export default function Footer() {
                   {FOOTER_EMAIL}
                 </a>
               </li>
-            </ul>
-
-            <ul className="mt-6 space-y-3 lg:hidden">
               <li className="text-sm leading-relaxed text-white/70">
-                {FOOTER_CAMPUS.line1}, {FOOTER_CAMPUS.line2}
+                {FOOTER_CAMPUS.line1}
                 <br />
+                {FOOTER_CAMPUS.line2}
+              </li>
+              <li>
                 <a
                   href={FOOTER_MAP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-1 inline-block text-sm font-semibold text-white transition-colors hover:text-amber-300"
+                  className="text-sm font-semibold text-white transition-colors hover:text-amber-300"
                 >
                   SEE MAP
                 </a>
@@ -285,4 +276,3 @@ export default function Footer() {
     </footer>
   )
 }
-

@@ -8,12 +8,18 @@ export default function MainNav({
   scrolled = false,
 }) {
   const { pathname } = useLocation()
+  const aboutPaths = ABOUT_US_DROPDOWN_ITEMS.map((item) => item.href)
+  const isAboutSection =
+    pathname === '/about-us' || aboutPaths.includes(pathname)
 
   if (mobile) {
     return (
       <nav className="flex flex-col gap-1" aria-label="Main navigation">
         {NAV_ITEMS.map((item) => {
-          const isActive = pathname === item.href
+          const isActive =
+            item.label === 'About Us'
+              ? isAboutSection
+              : pathname === item.href
           if (item.label === 'About Us') {
             return (
               <details key={item.label} className="group">
@@ -86,7 +92,10 @@ export default function MainNav({
       <div className="container mx-auto px-4">
         <div className="hidden items-center gap-1 lg:flex">
           {NAV_ITEMS.map((item) => {
-            const isActive = pathname === item.href
+            const isActive =
+              item.label === 'About Us'
+                ? isAboutSection
+                : pathname === item.href
             if (item.label === 'About Us') {
               return (
                 <div key={item.label} className="relative group">
