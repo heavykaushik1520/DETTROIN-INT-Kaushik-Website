@@ -229,7 +229,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 items-center gap-6 border-t border-white/10 pt-8 sm:grid-cols-2">
-          <p className="text-center text-xs text-white/50 sm:text-left">
+          <p className="text-center text-xs text-white sm:text-left">
             © {SITE_NAME} {new Date().getFullYear()}
           </p>
 
@@ -241,7 +241,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-white/40 hover:text-white"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white text-white transition-opacity hover:opacity-80"
                 >
                   <SocialIcon name={item.icon} />
                 </a>

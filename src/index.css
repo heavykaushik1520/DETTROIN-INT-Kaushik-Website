@@ -91,73 +91,10 @@ body,
     vibrate-subtle 0.35s linear infinite;
 }
 
-@keyframes learning-orbit-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes learning-pillar-in {
-  from {
-    opacity: 0;
-    transform: rotate(var(--angle)) translateX(min(42vw, 11.5rem))
-      rotate(calc(var(--angle) * -1)) scale(0.85);
-  }
-  to {
-    opacity: 1;
-    transform: rotate(var(--angle)) translateX(min(42vw, 11.5rem))
-      rotate(calc(var(--angle) * -1)) scale(1);
-  }
-}
-
-.learning-orbit {
-  animation: learning-orbit-spin 28s linear infinite;
-}
-
-.learning-orbit-slow {
-  animation: learning-orbit-spin 40s linear infinite reverse;
-}
-
-.learning-pillar {
-  animation: learning-pillar-in 0.7s ease-out both;
-  transform: rotate(var(--angle)) translateX(min(42vw, 11.5rem))
-    rotate(calc(var(--angle) * -1));
-}
-
-@media (min-width: 640px) {
-  .learning-pillar {
-    transform: rotate(var(--angle)) translateX(12.5rem)
-      rotate(calc(var(--angle) * -1));
-  }
-
-  @keyframes learning-pillar-in {
-    from {
-      opacity: 0;
-      transform: rotate(var(--angle)) translateX(12.5rem)
-        rotate(calc(var(--angle) * -1)) scale(0.85);
-    }
-    to {
-      opacity: 1;
-      transform: rotate(var(--angle)) translateX(12.5rem)
-        rotate(calc(var(--angle) * -1)) scale(1);
-    }
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .animate-scroll-up,
   .animate-scroll-down,
-  .animate-glow-up,
-  .learning-orbit,
-  .learning-orbit-slow,
-  .learning-pillar {
+  .animate-glow-up {
     animation: none;
-  }
-
-  .learning-pillar {
-    opacity: 1;
   }
 }

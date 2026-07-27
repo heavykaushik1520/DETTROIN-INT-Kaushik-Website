@@ -72,8 +72,8 @@ export default function Navbar({ menuOpen, setMenuOpen, scrolled = false }) {
           scrolled ? 'border-b border-gray-200' : 'border-b border-white/10'
         }`}
       >
-        <div className="container mx-auto flex items-center justify-between gap-6 px-4 py-2">
-          <Logo className="h-14 w-auto object-contain transition-all duration-300" />
+        <div className="container mx-auto flex items-center justify-between gap-3 px-4 py-2.5 lg:gap-6 lg:py-2">
+          <Logo className="h-10 w-auto object-contain transition-all duration-300 sm:h-12 lg:h-14" />
 
           <div className="ml-auto hidden items-center gap-8 lg:flex">
             <ContactDetails scrolled={scrolled} />
@@ -97,55 +97,67 @@ export default function Navbar({ menuOpen, setMenuOpen, scrolled = false }) {
             </a>
           </div>
 
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden">
             <a
               href={CONTACT.phonePrimary.href}
               data-testid="link-navbar-call-mobile"
-              className="flex items-center gap-1.5 rounded-full bg-amber-400 px-3 py-2 text-[10px] font-bold text-[#9e0e21] transition-all"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-400 text-[#9e0e21] transition-transform active:scale-95"
               aria-label="Call to book a visit"
             >
-              <PhoneIcon size={14} />
-              Book Visit
+              <PhoneIcon size={16} />
             </a>
             <a
               href={WHATSAPP_HREF}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="link-navbar-whatsapp-mobile"
-              className="flex items-center gap-1.5 rounded-full px-3 py-2 text-[10px] font-bold text-white"
+              className="flex h-10 w-10 items-center justify-center rounded-full text-white transition-transform active:scale-95"
               aria-label="Admission Enquiry on WhatsApp"
               style={{ background: 'rgb(37, 211, 102)' }}
             >
-              <WhatsAppIcon />
-              Admissions
+              <WhatsAppIcon size={16} />
             </a>
             <button
               type="button"
-              className={`flex min-h-[44px] min-w-[44px] items-center justify-center p-2.5 transition-colors ${
-                scrolled ? 'text-gray-900' : 'text-white'
-              }`}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-900 transition-colors active:scale-95"
               data-testid="button-mobile-menu"
               aria-label={menuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((open) => !open)}
             >
-              {menuOpen ? <CloseIcon /> : <MenuIcon />}
+              {menuOpen ? <CloseIcon size={18} /> : <MenuIcon size={18} />}
             </button>
           </div>
         </div>
       </div>
 
       {menuOpen && (
-        <div className="border-b border-gray-200 bg-white/95 px-4 py-4 text-gray-900 backdrop-blur-md lg:hidden">
-          <div className="container mx-auto flex max-w-lg flex-col gap-5">
-            <div className="flex flex-col gap-4">
-              <ContactDetails compact scrolled />
-            </div>
+        <div className="max-h-[min(78vh,640px)] overflow-y-auto border-b border-gray-200 bg-white lg:hidden">
+          <div className="container mx-auto px-4 py-3">
             <MainNav
               mobile
               scrolled
               onNavigate={() => setMenuOpen(false)}
             />
+            <div className="mt-4 grid grid-cols-2 gap-2 border-t border-gray-100 pt-4 pb-1">
+              <a
+                href={CONTACT.phonePrimary.href}
+                className="flex items-center justify-center gap-2 rounded-xl bg-amber-400 px-3 py-3 text-xs font-bold text-[#9e0e21]"
+              >
+                <PhoneIcon size={14} />
+                Call
+              </a>
+              <a
+                href={WHATSAPP_HREF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 rounded-xl px-3 py-3 text-xs font-bold text-white"
+                style={{ background: 'rgb(37, 211, 102)' }}
+              >
+                <WhatsAppIcon size={14} />
+                WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       )}

@@ -35,7 +35,7 @@ export default function MainNav({
 
   if (mobile) {
     return (
-      <nav className="flex flex-col gap-1" aria-label="Main navigation">
+      <nav className="flex flex-col" aria-label="Main navigation">
         {NAV_ITEMS.map((item) => {
           const dropdown = NAV_DROPDOWNS[item.label]
           const isActive = dropdown
@@ -44,34 +44,39 @@ export default function MainNav({
 
           if (dropdown) {
             return (
-              <details key={item.label} className="group">
+              <details
+                key={item.label}
+                className="group border-b border-gray-100"
+              >
                 <summary
-                  className={
-                    isActive
-                      ? 'border-l-2 border-amber-400 py-2.5 pl-3 text-sm font-semibold text-amber-500 cursor-pointer list-none'
-                      : `py-2.5 pl-3 text-sm font-medium ${
-                          scrolled ? 'text-gray-700' : 'text-white/90'
-                        } cursor-pointer list-none`
-                  }
+                  className={`flex cursor-pointer list-none items-center justify-between py-3.5 text-[15px] font-semibold [&::-webkit-details-marker]:hidden ${
+                    isActive ? 'text-[#9e0e21]' : 'text-gray-900'
+                  }`}
                 >
                   {item.label}
-                  <span className="ml-2 inline-flex align-middle text-xs text-amber-400">
-                    <ChevronDownIcon size={14} />
-                  </span>
+                  <ChevronDownIcon
+                    size={16}
+                    className="text-gray-400 transition-transform group-open:rotate-180"
+                  />
                 </summary>
-                <div className="mt-1 ml-4 flex flex-col gap-1">
-                  {dropdown.items.map((sub) => (
-                    <Link
-                      key={sub.label}
-                      to={sub.href}
-                      onClick={onNavigate}
-                      className={`py-1.5 pl-2 text-sm font-medium ${
-                        scrolled ? 'text-gray-700' : 'text-white/80'
-                      } hover:text-amber-300 transition-colors`}
-                    >
-                      {sub.label}
-                    </Link>
-                  ))}
+                <div className="mb-3 ml-1 flex flex-col gap-0.5 rounded-xl bg-[#fdf2f3] p-2">
+                  {dropdown.items.map((sub) => {
+                    const subActive = pathname === sub.href
+                    return (
+                      <Link
+                        key={sub.label}
+                        to={sub.href}
+                        onClick={onNavigate}
+                        className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
+                          subActive
+                            ? 'bg-white text-[#9e0e21] shadow-sm'
+                            : 'text-gray-700 hover:bg-white/80 hover:text-[#9e0e21]'
+                        }`}
+                      >
+                        {sub.label}
+                      </Link>
+                    )
+                  })}
                 </div>
               </details>
             )
@@ -82,13 +87,9 @@ export default function MainNav({
               key={item.label}
               to={item.href}
               onClick={onNavigate}
-              className={
-                isActive
-                  ? 'border-l-2 border-amber-400 py-2.5 pl-3 text-sm font-semibold text-amber-500'
-                  : `py-2.5 pl-3 text-sm font-medium ${
-                      scrolled ? 'text-gray-700' : 'text-white/90'
-                    }`
-              }
+              className={`border-b border-gray-100 py-3.5 text-[15px] font-semibold transition-colors ${
+                isActive ? 'text-[#9e0e21]' : 'text-gray-900'
+              }`}
             >
               {item.label}
             </Link>
