@@ -1,3 +1,5 @@
+import { ABOUT_US_DROPDOWN_ITEMS, NAV_ITEMS } from './contact'
+
 export const FOOTER_EMAIL = 'info@vasantvalley.edu.in'
 
 export const FOOTER_MAP_URL =
@@ -12,34 +14,9 @@ export const FOOTER_CAMPUS = {
   line2: 'Vasant Kunj, New Delhi, Delhi 110070',
 }
 
-export const FOOTER_COLUMN_ONE = [
-  { label: 'Home', href: '/' },
-  { label: 'Vision & Philosophy', href: '/about-us' },
-  { label: 'The Learning Experience', href: '/academics' },
-  { label: 'International Curriculum', href: '/academics' },
-  { label: 'Infrastructure', href: '/about-us' },
-]
+export const FOOTER_QUICK_LINKS = NAV_ITEMS
 
-export const FOOTER_COLUMN_TWO = [
-  { label: 'Special Education Needs', href: '#' },
-  { label: 'Intra-School Programmes', href: '#' },
-  { label: 'Inter-School Programmes', href: '#' },
-  { label: 'A Day in School', href: '#' },
-]
-
-export const FOOTER_COLUMN_THREE = [
-  { label: 'About Us', href: '/about-us' },
-  { label: 'Admissions', href: '/admissions' },
-  { label: 'Announcements', href: '#' },
-  { label: 'News & Events', href: '#' },
-]
-
-export const FOOTER_COLUMN_FOUR = [
-  { label: 'Login', href: '#' },
-  { label: 'FAQs', href: '#' },
-  { label: 'Statutory Compliances', href: '#' },
-  { label: 'Privacy Policy', href: '#' },
-]
+export const FOOTER_ABOUT_LINKS = ABOUT_US_DROPDOWN_ITEMS
 
 export const FOOTER_SOCIAL = [
   { label: 'Facebook', href: '#', icon: 'facebook' },
