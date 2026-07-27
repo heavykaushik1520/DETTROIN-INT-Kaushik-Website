@@ -11,6 +11,8 @@ export const PAGE_TITLES = {
   awards: `Awards & Achievements | ${SITE_NAME}`,
   contact: `Connect With Us | ${SITE_NAME}`,
   gallery: `Photo Gallery | ${SITE_NAME}`,
+  faqs: `FAQs | ${SITE_NAME}`,
+  careers: `Careers | ${SITE_NAME}`,
   academics: `Academics | ${SITE_NAME}`,
   admissions: `Admissions | ${SITE_NAME}`,
 }

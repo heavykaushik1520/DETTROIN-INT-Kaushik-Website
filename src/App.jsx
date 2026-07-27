@@ -10,6 +10,8 @@ import VisionPhilosophy from './pages/VisionPhilosophy'
 import CenterOfExcellence from './pages/CenterOfExcellence'
 import ProgrammesOffered from './pages/ProgrammesOffered'
 import OurTeam from './pages/OurTeam'
+import Faqs from './pages/Faqs'
+import Careers from './pages/Careers'
 import Academics from './pages/Academics'
 import Admissions from './pages/Admissions'
 
@@ -30,6 +32,8 @@ function App() {
           <Route path="/awards-achievements" element={<AwardsAchievements />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/faqs" element={<Faqs />} />
+          <Route path="/careers" element={<Careers />} />
         </Route>
       </Routes>
     </BrowserRouter>

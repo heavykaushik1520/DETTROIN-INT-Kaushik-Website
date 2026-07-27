@@ -28,6 +28,8 @@ export const NAV_ITEMS = [
   { label: 'Academics', href: '/academics' },
   { label: 'Admissions', href: '/admissions' },
   { label: 'Gallery', href: '/gallery' },
+  { label: 'Careers', href: '/careers' },
+  { label: 'FAQs', href: '/faqs' },
   { label: 'Connect With Us', href: '/contact-us' },
 ]
 
