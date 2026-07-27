@@ -54,31 +54,34 @@ export const ACHIEVEMENT_CARDS = [
   {
     title: '15th World Education Summit in Mumbai!',
     description:
-      'Won awards in the following categories:\n1) Innovation in Campus Infrastructure – Horizon International School\n2) Profound Technology usage in Early Childhood Teaching – Horizon Preschool International.',
+      'Won awards in the following categories:\n1) Innovation in Campus Infrastructure – Vasant Valley School\n2) Profound Technology usage in Early Childhood Teaching – Vasant Valley School.',
   },
   {
     title: 'Featured in Knowledge Review Magazine',
     description:
-      "Yet another Milestone achieved by Horizon Preschool International. It's a Proud moment for Horizon Preschools to get featured in 'The 10 Best Preschools in India' in The Knowledge Review Magazine.",
+      "Yet another Milestone achieved by Vasant Valley School. It's a proud moment for Vasant Valley School to be featured among notable institutions in The Knowledge Review Magazine.",
   },
   {
-    title: "100% Result: Horizon's First Batch (2018-19)",
+    title: "100% Result: Vasant Valley School's First Batch (2018-19)",
     description:
-      '100% Result: The Times Of India At Horizon International School, we feel really proud to announce 100% Result of our 10th standard students for the academic year 2018-19. As per The Times Of India, Horizon International.',
+      '100% Result: The Times Of India At Vasant Valley School, we feel really proud to announce 100% Result of our 10th standard students for the academic year 2018-19. As per The Times Of India, Vasant Valley School.',
   },
   {
-    title: 'Best Preschool & Secondary School in Thane',
+    title: 'Best School Recognition',
     description:
-      "Horizon awarded as Best Preschool and Secondary School in Thane. It gives us a great sense of pride that Horizon Preschools and Horizon International School have been awarded 'The Best Preschool and Secondary School in Thane'.",
+      "Vasant Valley School has been recognized for excellence. It gives us a great sense of pride that Vasant Valley School has been awarded a prestigious recognition.",
   },
   {
-    title: 'Horizon Wins Award For Excellence',
+    title: 'Vasant Valley School Wins Award For Excellence',
     description:
-      "It gives us immense pleasure to announce that we were awarded 'Excellence in Preschool Education' and 'Excellence in CBSE Education' in Thane by India Today on Saturday, 7th October 2017.",
+      "It gives us immense pleasure to announce that we were awarded recognition for excellence in education by India Today on Saturday, 7th October 2017.",
   },
   {
     title: 'We are a FIT INDIA School',
     description:
-      'FIT INDIA Certificate of Recognition Horizon International School proud to announce that our declaration has been approved by the Ministry of Youth Affairs and Sports and we are a FIT INDIA School!',
+      'FIT INDIA Certificate of Recognition. Vasant Valley School is proud to announce that our declaration has been approved by the Ministry of Youth Affairs and Sports and we are a FIT INDIA School!',
   },
 ]
+
+
+

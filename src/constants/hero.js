@@ -1,15 +1,15 @@
 export const HERO_WHATSAPP_HREF =
-  'https://wa.me/918291568972?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20admissions%20at%20Horizon%20International%20School.'
+  'https://wa.me/911141767940?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20admissions%20at%20Vasant%20Valley%20School.'
 
 export const HERO_STATS = [
-  { value: 'CBSE', label: 'Affiliated Â· #11300000' },
+  { value: 'CBSE', label: 'Affiliated · #11300000' },
   { value: 'Since 2009', label: 'Established' },
   { value: '3.5 Acres', label: 'Campus' },
   { value: '50K+', label: 'Students Impacted' },
 ]
 
 export const HERO_QUICK_LINKS = [
-  { label: 'Admissions 2026â€“27', href: '/admissions' },
+  { label: 'Admissions 2026–27', href: '/admissions' },
   { label: 'Fee Structure', href: '/fee-structure' },
   { label: 'Pre-Primary', href: '/pre-primary-school-mumbai' },
   { label: 'Senior Secondary', href: '/senior-secondary-section' },

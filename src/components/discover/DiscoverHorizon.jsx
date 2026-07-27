@@ -52,12 +52,12 @@ export default function DiscoverHorizon() {
         <div className="mb-16 text-center">
           <div className="mb-4 inline-block">
             <span className="text-xs font-semibold tracking-[0.2em] text-amber-500 uppercase">
-              Life at Horizon
+              Life at Vasant Valley
             </span>
             <div className="mx-auto mt-2 h-0.5 w-8 bg-amber-400" />
           </div>
           <h2 className="mb-4 text-4xl leading-tight font-extrabold tracking-tight text-gray-900 md:text-5xl">
-            Let&apos;s Discover Horizon!
+            Let&apos;s Discover Vasant Valley!
           </h2>
           <p className="mx-auto max-w-xl text-base text-gray-500">
             Committed to educating, strengthening, and nurturing every student —
@@ -74,3 +74,4 @@ export default function DiscoverHorizon() {
     </section>
   )
 }
+

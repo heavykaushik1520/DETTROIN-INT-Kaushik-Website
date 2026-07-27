@@ -1,24 +1,24 @@
-export const TICKER_TEXT = 'ADMISSIONS OPEN Â· ACADEMIC YEAR 2026â€“27'
+export const TICKER_TEXT = 'ADMISSIONS OPEN · ACADEMIC YEAR 2026–27'
 
 export const WHATSAPP_HREF =
-  'https://wa.me/919175866586?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20admissions.'
+  'https://wa.me/911141767940?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20admissions%20at%20Vasant%20Valley%20School.'
 
 export const CONTACT = {
   phonePrimary: {
-    label: '+91 91758 66586',
-    href: 'tel:+919175866586',
+    label: '+91 11 41767940',
+    href: 'tel:+911141767940',
   },
   phoneSecondary: {
-    label: '(022) 69000000',
-    href: 'tel:02269000000',
+    label: '+91 11 26896547 / 2787',
+    href: 'tel:+911126896547',
   },
   hours: {
     days: 'Mon - Sat',
-    time: '9.00 AM â€“ 6.00 PM',
+    time: '9.00 AM – 6.00 PM',
   },
   address: {
-    line1: 'Cosmos Arcade,',
-    line2: 'Hiranandani Estate, Mumbai',
+    line1: 'Vasant Kunj Rd, Pocket 7, Sector C,',
+    line2: 'Vasant Kunj, New Delhi, Delhi 110070',
   },
 }
 

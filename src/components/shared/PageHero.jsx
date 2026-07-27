@@ -25,7 +25,7 @@ export default function PageHero({ title, breadcrumb }) {
           aria-label="Breadcrumb"
         >
           <Link to="/" className="transition-colors hover:text-amber-500">
-            Horizon International
+            Vasant Valley School
           </Link>
           <span className="flex items-center gap-1.5">
             <ChevronRightIcon size={14} />
@@ -48,3 +48,4 @@ export default function PageHero({ title, breadcrumb }) {
     </div>
   )
 }
+

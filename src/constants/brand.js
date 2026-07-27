@@ -1,4 +1,4 @@
-import logoImg from '../assets/img/logo/logo.png'
+import logoImg from '../assets/img/logo/logo-vasant-valley.svg'
 
 export const LOGO_SRC = logoImg
-export const LOGO_ALT = 'Horizon International School'
+export const LOGO_ALT = 'Vasant Valley School'

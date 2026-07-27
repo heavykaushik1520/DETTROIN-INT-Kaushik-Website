@@ -18,14 +18,14 @@ function AwardsCopy() {
       </div>
 
       <h2 className="mb-5 text-3xl leading-tight font-extrabold tracking-tight text-white md:text-4xl lg:text-[42px]">
-        Welcome To Horizon
+        Welcome To Vasant Valley
         <br />
         <span className="text-amber-400">International School</span>
       </h2>
 
       <p className="mx-auto mb-8 max-w-lg text-[15px] leading-[1.8] text-blue-200/80 lg:mx-0">
         Recognised and awarded by leading education platforms across India,
-        Horizon International School continues to set benchmarks in academic
+        Vasant Valley School continues to set benchmarks in academic
         excellence, holistic development, and preparing students for success in
         an evolving world.
       </p>
@@ -78,3 +78,4 @@ export default function Awards() {
     </section>
   )
 }
+
