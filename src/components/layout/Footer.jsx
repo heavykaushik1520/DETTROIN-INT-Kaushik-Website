@@ -12,6 +12,7 @@ import {
   FOOTER_ABOUT_LINKS,
   FOOTER_CAMPUS,
   FOOTER_EMAIL,
+  FOOTER_EXPLORE_LINKS,
   FOOTER_MAP_EMBED_URL,
   FOOTER_MAP_URL,
   FOOTER_QUICK_LINKS,
@@ -195,9 +196,10 @@ export default function Footer() {
       <CampusMap />
 
       <div className="container mx-auto px-4 py-14">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <FooterMenuList items={FOOTER_QUICK_LINKS} title="Quick Links" />
           <FooterMenuList items={FOOTER_ABOUT_LINKS} title="About Us" />
+          <FooterMenuList items={FOOTER_EXPLORE_LINKS} title="Explore" />
 
           <div>
             <h3 className="mb-4 text-sm font-black tracking-wide text-white uppercase">

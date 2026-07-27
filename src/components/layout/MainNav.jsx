@@ -1,6 +1,24 @@
 import { Link, useLocation } from 'react-router-dom'
 import { ChevronDownIcon } from '../icons'
-import { ABOUT_US_DROPDOWN_ITEMS, NAV_ITEMS } from '../../constants/contact'
+import {
+  ABOUT_US_DROPDOWN_ITEMS,
+  EXPLORE_DROPDOWN_ITEMS,
+  NAV_ITEMS,
+} from '../../constants/contact'
+
+const NAV_DROPDOWNS = {
+  'About Us': {
+    items: ABOUT_US_DROPDOWN_ITEMS,
+    isSection: (pathname) =>
+      pathname === '/about-us' ||
+      ABOUT_US_DROPDOWN_ITEMS.some((item) => item.href === pathname),
+  },
+  Explore: {
+    items: EXPLORE_DROPDOWN_ITEMS,
+    isSection: (pathname) =>
+      EXPLORE_DROPDOWN_ITEMS.some((item) => item.href === pathname),
+  },
+}
 
 export default function MainNav({
   mobile = false,
@@ -8,19 +26,17 @@ export default function MainNav({
   scrolled = false,
 }) {
   const { pathname } = useLocation()
-  const aboutPaths = ABOUT_US_DROPDOWN_ITEMS.map((item) => item.href)
-  const isAboutSection =
-    pathname === '/about-us' || aboutPaths.includes(pathname)
 
   if (mobile) {
     return (
       <nav className="flex flex-col gap-1" aria-label="Main navigation">
         {NAV_ITEMS.map((item) => {
-          const isActive =
-            item.label === 'About Us'
-              ? isAboutSection
-              : pathname === item.href
-          if (item.label === 'About Us') {
+          const dropdown = NAV_DROPDOWNS[item.label]
+          const isActive = dropdown
+            ? dropdown.isSection(pathname)
+            : pathname === item.href
+
+          if (dropdown) {
             return (
               <details key={item.label} className="group">
                 <summary
@@ -38,7 +54,7 @@ export default function MainNav({
                   </span>
                 </summary>
                 <div className="mt-1 ml-4 flex flex-col gap-1">
-                  {ABOUT_US_DROPDOWN_ITEMS.map((sub) => (
+                  {dropdown.items.map((sub) => (
                     <Link
                       key={sub.label}
                       to={sub.href}
@@ -54,6 +70,7 @@ export default function MainNav({
               </details>
             )
           }
+
           return (
             <Link
               key={item.label}
@@ -92,18 +109,17 @@ export default function MainNav({
       <div className="container mx-auto px-4">
         <div className="hidden items-center gap-1 lg:flex">
           {NAV_ITEMS.map((item) => {
-            const isActive =
-              item.label === 'About Us'
-                ? isAboutSection
-                : pathname === item.href
-            if (item.label === 'About Us') {
+            const dropdown = NAV_DROPDOWNS[item.label]
+            const isActive = dropdown
+              ? dropdown.isSection(pathname)
+              : pathname === item.href
+
+            if (dropdown) {
               return (
                 <div key={item.label} className="relative group">
                   <button
                     type="button"
-                    className={
-                      isActive ? linkActive : linkBase
-                    }
+                    className={isActive ? linkActive : linkBase}
                     aria-haspopup="menu"
                   >
                     {item.label}
@@ -116,7 +132,7 @@ export default function MainNav({
                     className="absolute left-0 top-full z-50 hidden min-w-[240px] flex-col gap-2 rounded-xl border border-white/10 bg-[#091a4f]/95 p-2 shadow-lg group-hover:flex"
                     role="menu"
                   >
-                    {ABOUT_US_DROPDOWN_ITEMS.map((sub) => (
+                    {dropdown.items.map((sub) => (
                       <Link
                         key={sub.label}
                         to={sub.href}
@@ -129,6 +145,7 @@ export default function MainNav({
                 </div>
               )
             }
+
             return (
               <Link
                 key={item.label}

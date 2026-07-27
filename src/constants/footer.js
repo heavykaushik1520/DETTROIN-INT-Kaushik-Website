@@ -1,4 +1,8 @@
-import { ABOUT_US_DROPDOWN_ITEMS, NAV_ITEMS } from './contact'
+import {
+  ABOUT_US_DROPDOWN_ITEMS,
+  EXPLORE_DROPDOWN_ITEMS,
+  NAV_ITEMS,
+} from './contact'
 
 export const FOOTER_EMAIL = 'info@vasantvalley.edu.in'
 
@@ -17,6 +21,8 @@ export const FOOTER_CAMPUS = {
 export const FOOTER_QUICK_LINKS = NAV_ITEMS
 
 export const FOOTER_ABOUT_LINKS = ABOUT_US_DROPDOWN_ITEMS
+
+export const FOOTER_EXPLORE_LINKS = EXPLORE_DROPDOWN_ITEMS
 
 export const FOOTER_SOCIAL = [
   { label: 'Facebook', href: '#', icon: 'facebook' },

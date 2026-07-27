@@ -12,6 +12,9 @@ import ProgrammesOffered from './pages/ProgrammesOffered'
 import OurTeam from './pages/OurTeam'
 import Faqs from './pages/Faqs'
 import Careers from './pages/Careers'
+import NewsEvents from './pages/NewsEvents'
+import ADayInSchool from './pages/ADayInSchool'
+import Infrastructure from './pages/Infrastructure'
 import Academics from './pages/Academics'
 import Admissions from './pages/Admissions'
 
@@ -34,6 +37,9 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/news-events" element={<NewsEvents />} />
+          <Route path="/a-day-in-school" element={<ADayInSchool />} />
+          <Route path="/infrastructure" element={<Infrastructure />} />
         </Route>
       </Routes>
     </BrowserRouter>

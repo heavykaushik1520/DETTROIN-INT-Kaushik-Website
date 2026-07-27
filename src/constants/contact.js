@@ -27,7 +27,7 @@ export const NAV_ITEMS = [
   { label: 'About Us', href: '/about-us' },
   { label: 'Academics', href: '/academics' },
   { label: 'Admissions', href: '/admissions' },
-  { label: 'Gallery', href: '/gallery' },
+  { label: 'Explore', href: '/news-events' },
   { label: 'Careers', href: '/careers' },
   { label: 'FAQs', href: '/faqs' },
   { label: 'Connect With Us', href: '/contact-us' },
@@ -53,5 +53,24 @@ export const ABOUT_US_DROPDOWN_ITEMS = [
   {
     label: 'Our Team',
     href: '/our-team',
+  },
+]
+
+export const EXPLORE_DROPDOWN_ITEMS = [
+  {
+    label: 'News & Events',
+    href: '/news-events',
+  },
+  {
+    label: 'A Day In School',
+    href: '/a-day-in-school',
+  },
+  {
+    label: 'Infrastructure',
+    href: '/infrastructure',
+  },
+  {
+    label: 'Gallery',
+    href: '/gallery',
   },
 ]

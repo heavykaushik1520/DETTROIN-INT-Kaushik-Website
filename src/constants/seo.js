@@ -13,6 +13,9 @@ export const PAGE_TITLES = {
   gallery: `Photo Gallery | ${SITE_NAME}`,
   faqs: `FAQs | ${SITE_NAME}`,
   careers: `Careers | ${SITE_NAME}`,
+  newsEvents: `News & Events | ${SITE_NAME}`,
+  aDayInSchool: `A Day In School | ${SITE_NAME}`,
+  infrastructure: `Infrastructure | ${SITE_NAME}`,
   academics: `Academics | ${SITE_NAME}`,
   admissions: `Admissions | ${SITE_NAME}`,
 }

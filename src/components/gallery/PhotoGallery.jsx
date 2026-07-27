@@ -68,11 +68,6 @@ export default function PhotoGallery() {
   return (
     <section className="relative overflow-hidden bg-[#f8fafc] py-16 md:py-20">
       <div
-        className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full opacity-40 blur-3xl"
-        style={{ background: 'rgb(251, 191, 36)' }}
-        aria-hidden="true"
-      />
-      <div
         className="pointer-events-none absolute bottom-0 -left-20 h-80 w-80 rounded-full opacity-30 blur-3xl"
         style={{ background: 'rgb(13, 59, 134)' }}
         aria-hidden="true"
