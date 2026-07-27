@@ -5,6 +5,9 @@ import AwardsAchievements from './pages/AwardsAchievements'
 import ContactUs from './pages/ContactUs'
 import Gallery from './pages/Gallery'
 import AboutUs from './pages/AboutUs'
+import VisionPhilosophy from './pages/VisionPhilosophy'
+import CenterOfExcellence from './pages/CenterOfExcellence'
+import OurTeam from './pages/OurTeam'
 import Academics from './pages/Academics'
 import Admissions from './pages/Admissions'
 
@@ -15,6 +18,9 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/vision-philosophy" element={<VisionPhilosophy />} />
+          <Route path="/center-of-excellence" element={<CenterOfExcellence />} />
+          <Route path="/our-team" element={<OurTeam />} />
           <Route path="/academics" element={<Academics />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/awards-achievements" element={<AwardsAchievements />} />

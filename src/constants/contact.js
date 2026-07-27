@@ -30,3 +30,18 @@ export const NAV_ITEMS = [
   { label: 'Gallery', href: '/gallery' },
   { label: 'Connect With Us', href: '/contact-us' },
 ]
+
+export const ABOUT_US_DROPDOWN_ITEMS = [
+  {
+    label: 'Vision & Philosophy',
+    href: '/vision-philosophy',
+  },
+  {
+    label: 'Center Of Excellence',
+    href: '/center-of-excellence',
+  },
+  {
+    label: 'Our Team',
+    href: '/our-team',
+  },
+]

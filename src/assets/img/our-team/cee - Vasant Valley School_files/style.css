@@ -1,0 +1,26 @@
+#form-status {
+	padding: 12px 20px;
+	width: 100%;
+	display:none; 
+	font-size: 15px;
+	color: #4CAF50;
+    font-family: 'mohr_altregular';
+    font-size: 12px;
+}
+.success{
+	margin-top: 20px;
+    font-size: 12px;
+   
+   
+}
+div#pls_wait_contact {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'mohr_altregular';
+}
+span.field_error {
+    color: #9f0622;
+    font-size: 12px;
+    font-family: 'mohr_altregular';
+}
+	  
