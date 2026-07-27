@@ -75,7 +75,7 @@ function VacantDocsTable({ documents }) {
                 {doc}
               </td>
               <td className="border-t border-gray-100 px-4 py-3 text-xs text-gray-400">
-                —
+                -
               </td>
               <td className="border-t border-gray-100 px-4 py-3 text-center">
                 <span className="inline-flex items-center rounded-lg bg-gray-100 px-3 py-1.5 text-xs font-semibold text-gray-400">

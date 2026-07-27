@@ -18,5 +18,6 @@ export const PAGE_TITLES = {
   infrastructure: `Infrastructure | ${SITE_NAME}`,
   specialEducationNeeds: `Special Education Needs | ${SITE_NAME}`,
   academics: `Academics | ${SITE_NAME}`,
+  placements: `Placements | ${SITE_NAME}`,
   admissions: `Admissions | ${SITE_NAME}`,
 }

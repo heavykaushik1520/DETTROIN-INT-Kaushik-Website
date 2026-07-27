@@ -1,12 +1,12 @@
 export const ACADEMICS_GENERAL = [
   { label: 'Name of the School', value: 'Vasant Valley School' },
-  { label: 'Affiliation Number (if applicable)', value: '—' },
-  { label: 'School Code (if applicable)', value: '—' },
+  { label: 'Affiliation Number (if applicable)', value: '-' },
+  { label: 'School Code (if applicable)', value: '-' },
   {
     label: 'Complete Address with PIN Code',
     value: 'Vasant Kunj Rd, Pocket 7, Sector C, Vasant Kunj, New Delhi, Delhi 110070',
   },
-  { label: 'Principal Name & Qualification', value: '—' },
+  { label: 'Principal Name & Qualification', value: '-' },
   { label: 'Email ID', value: 'info@vasantvalley.edu.in' },
   { label: 'Contact Details', value: '+91 11 41767940' },
 ]
@@ -31,39 +31,39 @@ export const ACADEMICS_ACADEMIC_DOCS = [
 ]
 
 export const ACADEMICS_STAFF = [
-  { label: 'Principal', value: '—' },
-  { label: 'Total Number of Teachers', value: '—' },
-  { label: 'A. PGT', value: '—' },
-  { label: 'B. TGT', value: '—' },
-  { label: 'C. PRT', value: '—' },
-  { label: 'D. Other', value: '—' },
-  { label: 'Teachers Section Ratio', value: '—' },
-  { label: 'Details of Special Education', value: '—' },
-  { label: 'Details of Counsellor and Wellness Teacher', value: '—' },
+  { label: 'Principal', value: '-' },
+  { label: 'Total Number of Teachers', value: '-' },
+  { label: 'A. PGT', value: '-' },
+  { label: 'B. TGT', value: '-' },
+  { label: 'C. PRT', value: '-' },
+  { label: 'D. Other', value: '-' },
+  { label: 'Teachers Section Ratio', value: '-' },
+  { label: 'Details of Special Education', value: '-' },
+  { label: 'Details of Counsellor and Wellness Teacher', value: '-' },
 ]
 
 export const ACADEMICS_INFRASTRUCTURE = [
   {
     label: 'Total Campus Area of the School (in square metres)',
-    value: '—',
+    value: '-',
   },
   {
     label: 'No. and Size of the Classrooms in sq. mtr',
-    value: '—',
+    value: '-',
   },
   {
     label:
       'No. and Size of the Laboratories including the Computer Lab in sq. mtr',
-    value: '—',
+    value: '-',
   },
-  { label: 'Internet Facility (Y/N)', value: '—' },
-  { label: 'No. of Girls Toilet', value: '—' },
-  { label: 'No. of Boys Toilet', value: '—' },
+  { label: 'Internet Facility (Y/N)', value: '-' },
+  { label: 'No. of Girls Toilet', value: '-' },
+  { label: 'No. of Boys Toilet', value: '-' },
   {
     label:
       'Link of YouTube Video of Inspection of School covering the Infrastructure',
-    value: '—',
+    value: '-',
   },
 ]
 
-export const ACADEMICS_MANDATORY = ['Mandatory Public Disclosure (Appendix – IX)']
+export const ACADEMICS_MANDATORY = ['Mandatory Public Disclosure (Appendix - IX)']

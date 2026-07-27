@@ -1,4 +1,4 @@
-export const TICKER_TEXT = 'ADMISSIONS OPEN ? ACADEMIC YEAR 2026?27'
+export const TICKER_TEXT = 'ADMISSIONS OPEN - ACADEMIC YEAR 2026-27'
 
 export const WHATSAPP_HREF =
   'https://wa.me/911141767940?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20admissions%20at%20Vasant%20Valley%20School.'
@@ -14,7 +14,7 @@ export const CONTACT = {
   },
   hours: {
     days: 'Mon - Sat',
-    time: '9.00 AM ? 6.00 PM',
+    time: '9.00 AM - 6.00 PM',
   },
   address: {
     line1: 'Vasant Kunj Rd, Pocket 7, Sector C,',
@@ -31,6 +31,17 @@ export const NAV_ITEMS = [
   { label: 'Careers', href: '/careers' },
   { label: 'FAQs', href: '/faqs' },
   { label: 'Connect With Us', href: '/contact-us' },
+]
+
+export const ACADEMICS_DROPDOWN_ITEMS = [
+  {
+    label: 'Academics',
+    href: '/academics',
+  },
+  {
+    label: 'Placements',
+    href: '/placements',
+  },
 ]
 
 export const ABOUT_US_DROPDOWN_ITEMS = [

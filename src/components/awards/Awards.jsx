@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRightIcon } from '../icons'
 import {
+  AWARDS_ABOUT_PARAGRAPHS,
   AWARDS_COLUMN_DOWN,
   AWARDS_COLUMN_UP,
   HAS_AWARD_LOGOS,
@@ -23,20 +24,25 @@ function AwardsCopy() {
         <span className="text-amber-400">International School</span>
       </h2>
 
+      <p className="mx-auto mb-4 max-w-lg text-[15px] leading-[1.8] text-blue-200/80 lg:mx-0">
+        {AWARDS_ABOUT_PARAGRAPHS[0]}
+      </p>
+
+      <p className="mx-auto mb-4 max-w-lg text-[15px] leading-[1.8] text-blue-200/80 lg:mx-0">
+        {AWARDS_ABOUT_PARAGRAPHS[1]}
+      </p>
+
       <p className="mx-auto mb-8 max-w-lg text-[15px] leading-[1.8] text-blue-200/80 lg:mx-0">
-        Recognised and awarded by leading education platforms across India,
-        Vasant Valley School continues to set benchmarks in academic
-        excellence, holistic development, and preparing students for success in
-        an evolving world.
+        {AWARDS_ABOUT_PARAGRAPHS[2]}
       </p>
 
       <Link
-        to="/awards-achievements"
+        to="/about-us"
         data-testid="button-awards-cta"
         className="group inline-flex items-center gap-2.5 px-7 py-3.5 text-sm font-bold text-[#091a4f] transition-all duration-300 hover:opacity-90 hover:shadow-lg"
         style={{ background: 'rgb(251, 191, 36)', borderRadius: '9999px' }}
       >
-        View All Awards
+        About Us
         <ArrowRightIcon className="transition-transform group-hover:translate-x-0.5" />
       </Link>
     </div>

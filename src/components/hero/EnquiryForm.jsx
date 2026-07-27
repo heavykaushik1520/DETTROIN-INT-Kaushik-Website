@@ -197,7 +197,7 @@ export default function EnquiryForm() {
             </a>
 
             <p className="pt-1 text-center text-[11px] text-gray-400">
-              Mon–Sat · 9 AM–6 PM · No entrance test for Nursery–Class 8
+              Mon - Sat, 9 AM - 6 PM. No entrance test for Nursery - Class 8
             </p>
           </form>
         </div>

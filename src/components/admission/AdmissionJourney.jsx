@@ -108,11 +108,11 @@ export default function AdmissionJourney() {
             className="mb-3 text-3xl leading-tight font-extrabold tracking-tight text-gray-900 md:text-4xl"
             style={{ fontFamily: '"DM Sans", sans-serif' }}
           >
-            Your Admission Journey at RIS
+            Your Admission Journey at Vasant Valley School
           </h2>
           <p className="mx-auto max-w-md text-base text-gray-500">
             Five straightforward steps from your first enquiry to your child&apos;s
-            first day of school.
+            first day at VVS.
           </p>
         </div>
 

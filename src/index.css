@@ -33,9 +33,47 @@ body,
   animation: scroll-down 12s linear infinite;
 }
 
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 6px rgba(37, 211, 102, 0.45),
+      0 0 14px rgba(37, 211, 102, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 0 14px rgba(37, 211, 102, 0.75),
+      0 0 28px rgba(37, 211, 102, 0.45),
+      0 0 42px rgba(37, 211, 102, 0.2);
+  }
+}
+
+@keyframes vibrate-subtle {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(0.4px, -0.4px, 0);
+  }
+  50% {
+    transform: translate3d(-0.4px, 0.4px, 0);
+  }
+  75% {
+    transform: translate3d(0.4px, 0.4px, 0);
+  }
+}
+
+.animate-glow-up {
+  animation:
+    glow-pulse 2s ease-in-out infinite,
+    vibrate-subtle 0.35s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-scroll-up,
-  .animate-scroll-down {
+  .animate-scroll-down,
+  .animate-glow-up {
     animation: none;
   }
 }

@@ -32,7 +32,7 @@ export default function AdmissionForm() {
         <div className="mb-10 text-center">
           <div className="mb-4 inline-block">
             <span className="text-xs font-semibold tracking-[0.2em] text-amber-500 uppercase">
-              Admissions 2026–27
+              Admissions 2026-27
             </span>
             <div className="mx-auto mt-2 h-0.5 w-8 bg-amber-400" />
           </div>

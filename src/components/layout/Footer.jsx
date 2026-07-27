@@ -241,12 +241,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 items-center gap-6 border-t border-white/10 pt-8 lg:grid-cols-3">
-          <p className="text-center text-xs text-white/50 lg:text-left">
+        <div className="mt-12 grid grid-cols-1 items-center gap-6 border-t border-white/10 pt-8 sm:grid-cols-2">
+          <p className="text-center text-xs text-white/50 sm:text-left">
             © {SITE_NAME} {new Date().getFullYear()}
           </p>
 
-          <ul className="flex items-center justify-center gap-4">
+          <ul className="flex items-center justify-center gap-4 sm:justify-end">
             {FOOTER_SOCIAL.map((item) => (
               <li key={item.label}>
                 <a
@@ -261,18 +261,6 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-
-          <p className="text-center text-xs leading-relaxed text-white/50 lg:text-right">
-            {FOOTER_CAMPUS.line1}, {FOOTER_CAMPUS.line2} |{' '}
-            <a
-              href={FOOTER_MAP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-white transition-colors hover:text-amber-300"
-            >
-              MAP
-            </a>
-          </p>
         </div>
       </div>
     </footer>

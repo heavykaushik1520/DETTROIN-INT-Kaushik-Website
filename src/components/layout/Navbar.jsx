@@ -89,7 +89,7 @@ export default function Navbar({ menuOpen, setMenuOpen, scrolled = false }) {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="link-navbar-whatsapp"
-              className="flex items-center gap-2 rounded-full px-4 py-2 text-xs font-bold text-white transition-all hover:opacity-90"
+              className="animate-glow-up flex items-center gap-2 rounded-full px-4 py-2 text-xs font-bold text-white transition-all hover:opacity-90"
               style={{ background: 'rgb(37, 211, 102)' }}
             >
               <WhatsAppIcon />

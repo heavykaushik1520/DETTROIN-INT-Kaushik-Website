@@ -1,7 +1,7 @@
-import awardsImg from '../assets/img/life-at-horizon/awards.webp'
-import amenitiesImg from '../assets/img/life-at-horizon/amenities.jpg'
-import studentAchievementsImg from '../assets/img/life-at-horizon/student-achievements.webp'
-import safetySecurityImg from '../assets/img/life-at-horizon/safety-security.webp'
+import awardsImg from '../assets/img/center-of-excellence/image-vv-8.jpg'
+import amenitiesImg from '../assets/img/photo-gallery/main-new-infra.jpg'
+import studentAchievementsImg from '../assets/img/extra-curricular/primary-section.webp'
+import safetySecurityImg from '../assets/img/infrastructure/infra-banner-1.jpg'
 
 export const DISCOVER_CARDS = [
   {
@@ -37,4 +37,3 @@ export const DISCOVER_CARDS = [
     image: safetySecurityImg,
   },
 ]
-

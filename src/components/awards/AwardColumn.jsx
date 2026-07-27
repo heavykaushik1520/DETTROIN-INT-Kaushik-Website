@@ -6,9 +6,9 @@ function AwardCard({ award, className = '' }) {
   if (failed || !award.src) {
     return (
       <div
-        className={`flex h-[100px] w-[140px] flex-shrink-0 items-center justify-center rounded-2xl bg-white/95 p-3 text-center shadow-lg ${className}`}
+        className={`flex h-[120px] w-[160px] flex-shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/10 p-3 text-center shadow-lg ${className}`}
       >
-        <span className="text-xs font-semibold leading-snug text-[#091a4f]">
+        <span className="text-xs font-semibold leading-snug text-white/90">
           {award.alt}
         </span>
       </div>
@@ -18,11 +18,11 @@ function AwardCard({ award, className = '' }) {
   const content = (
     <img
       alt={award.alt}
-      width="100"
-      height="60"
+      width="160"
+      height="120"
       loading="lazy"
       decoding="async"
-      className="max-h-full max-w-full object-contain"
+      className="h-full w-full object-cover"
       src={award.src}
       onError={() => setFailed(true)}
     />
@@ -31,7 +31,7 @@ function AwardCard({ award, className = '' }) {
   if (!award.href) {
     return (
       <div
-        className={`flex h-[100px] w-[140px] flex-shrink-0 items-center justify-center rounded-2xl bg-white p-4 shadow-lg ${className}`}
+        className={`h-[120px] w-[160px] flex-shrink-0 overflow-hidden rounded-2xl shadow-lg ${className}`}
       >
         {content}
       </div>
@@ -43,7 +43,7 @@ function AwardCard({ award, className = '' }) {
       href={award.href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`flex h-[100px] w-[140px] flex-shrink-0 items-center justify-center rounded-2xl bg-white p-4 shadow-lg transition-shadow hover:shadow-xl ${className}`}
+      className={`block h-[120px] w-[160px] flex-shrink-0 overflow-hidden rounded-2xl shadow-lg transition-transform hover:scale-[1.02] ${className}`}
     >
       {content}
     </a>
@@ -58,7 +58,7 @@ export default function AwardColumn({ awards, direction = 'up' }) {
     direction === 'up' ? 'animate-scroll-up' : 'animate-scroll-down'
 
   return (
-    <div className="relative w-[140px] overflow-hidden">
+    <div className="relative w-[160px] overflow-hidden">
       <div className={`flex flex-col gap-4 ${animationClass}`}>
         {items.map((award, index) => (
           <AwardCard key={`${award.alt}-${index}`} award={award} />

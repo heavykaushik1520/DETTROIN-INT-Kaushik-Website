@@ -1,4 +1,4 @@
-import heroImg from '../../assets/img/hero-section/hero-section-image.png'
+import heroImg from '../../assets/img/hero-section/hero-section-image-2.png'
 import HeroContent from './HeroContent'
 import EnquiryForm from './EnquiryForm'
 

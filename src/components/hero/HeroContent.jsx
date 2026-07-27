@@ -17,7 +17,7 @@ export default function HeroContent() {
           <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.7)]" />
         </span>
         <span className="text-[11px] font-semibold tracking-[0.14em] text-amber-300 uppercase">
-          Check Seat Availability 2026–27
+          Check Seat Availability 2026-27
         </span>
         <ChevronRightIcon className="text-amber-400 transition-transform group-hover:translate-x-0.5" />
       </button>
@@ -33,10 +33,10 @@ export default function HeroContent() {
       </h1>
 
       <p className="mb-2 text-base font-semibold text-blue-100 md:text-lg">
-        Admissions Open 2026–27 at Vasant Valley School.
+        Admissions Open 2026-27 at Vasant Valley School.
       </p>
       <p className="mb-8 max-w-lg text-sm leading-relaxed font-light text-blue-200/70 md:text-base">
-        A CBSE-affiliated K–12 school with a 3.5-acre campus, strong academics,
+        A CBSE-affiliated K-12 school with a 3.5-acre campus, strong academics,
         sports, safety, transport, and holistic learning.
       </p>
 

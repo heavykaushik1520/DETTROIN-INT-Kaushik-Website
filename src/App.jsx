@@ -17,6 +17,7 @@ import ADayInSchool from './pages/ADayInSchool'
 import Infrastructure from './pages/Infrastructure'
 import SpecialEducationNeeds from './pages/SpecialEducationNeeds'
 import Academics from './pages/Academics'
+import Placements from './pages/Placements'
 import Admissions from './pages/Admissions'
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/programmes-offered" element={<ProgrammesOffered />} />
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/academics" element={<Academics />} />
+          <Route path="/placements" element={<Placements />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/awards-achievements" element={<AwardsAchievements />} />
           <Route path="/contact-us" element={<ContactUs />} />

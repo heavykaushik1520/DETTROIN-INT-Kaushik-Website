@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { ChevronDownIcon } from '../icons'
 import {
   ABOUT_US_DROPDOWN_ITEMS,
+  ACADEMICS_DROPDOWN_ITEMS,
   EXPLORE_DROPDOWN_ITEMS,
   NAV_ITEMS,
 } from '../../constants/contact'
@@ -12,6 +13,11 @@ const NAV_DROPDOWNS = {
     isSection: (pathname) =>
       pathname === '/about-us' ||
       ABOUT_US_DROPDOWN_ITEMS.some((item) => item.href === pathname),
+  },
+  Academics: {
+    items: ACADEMICS_DROPDOWN_ITEMS,
+    isSection: (pathname) =>
+      ACADEMICS_DROPDOWN_ITEMS.some((item) => item.href === pathname),
   },
   Explore: {
     items: EXPLORE_DROPDOWN_ITEMS,
